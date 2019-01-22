@@ -1,2 +1,2 @@
 # Bootcamp10
-[home](https://github.com/Vasia1101/Bootcamp10.git/dz1/index.html)
+[home](https://vasia1101.github.io/Bootcamp10/dz1/index.html)
