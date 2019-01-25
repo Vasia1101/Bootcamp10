@@ -1,179 +1,172 @@
 * {
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    max-width: 1925px;
-    background-color: rgb(255, 255, 255);
-    font-family: 'Lato', sans-serif;
+  max-width: 1925px;
+  background-color: red;
+  font-family: "Lato", sans-serif;
 }
 
 header {
-    background-image: url(./Layer8.png);
-    width: 100%;
-    background-size: cover;
-    background-position: center center;
+  background-image: url(./Layer8.png);
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
 }
 
 .wrapper {
-    padding-top: 286px;
-    max-width: 902px;
-    margin: auto;
-    text-align: center;
-    text-transform: uppercase;
-
-
+  padding-top: 286px;
+  max-width: 902px;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .logo {
-    padding-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .white {
-    color: #ffffff
+  color: #ffffff;
 }
 
 .work {
-    font-size: 54px;
-    letter-spacing: 5px;
+  font-size: 54px;
+  letter-spacing: 5px;
 }
 
 .lab {
-    padding-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .helping {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .first {
-    padding-top: 250px;
-    padding-bottom: 115px;
+  padding-top: 250px;
+  padding-bottom: 115px;
 }
 
 .box {
-    max-width: 100%;
-    border: 1px solid black;
-    margin-bottom: 160px;
+  max-width: 100%;
+  border: 1px solid black;
+  margin-bottom: 160px;
 }
 
 .black {
-    padding-top: 160px;
-    font-size: 15px;
-
+  padding-top: 160px;
+  font-size: 15px;
 }
 
 h2 {
-    padding-top: 20px;
-    font-size: 34px;
-    letter-spacing: 5px;
+  padding-top: 20px;
+  font-size: 34px;
+  letter-spacing: 5px;
 }
 
 .collaborators {
-    padding: 75px 160px 40px 160px;
+  padding: 75px 160px 40px 160px;
 }
 
 .create {
-    padding: 0px 230px 40px 230px;
+  padding: 0px 230px 40px 230px;
 }
 
 .qwer {
-    background-image: url(./Layer4.png);
-    width: 100%;
-    /* height: 1072px; */
-    background-size: cover;
-    background-position: center center;
-
+  background-image: url(./Layer4.png);
+  width: 100%;
+  /* height: 1072px; */
+  background-size: cover;
+  background-position: center center;
 }
 
 .services {
-    padding-top: 160px;
-    padding-bottom: 160px;
-
+  padding-top: 160px;
+  padding-bottom: 160px;
 }
 
 .xob {
-    max-width: 100%;
-    border: 1px solid white;
-
-
+  max-width: 100%;
+  border: 1px solid white;
 }
 
 .row3 {
-    padding: 40px 250px 50px 250px;
+  padding: 40px 250px 50px 250px;
 }
 
 .pen {
-    padding: 40px;
+  padding: 40px;
 }
 
 button {
-    margin-bottom: 25px;
-    width: 400px;
-    display: block;
-    border: 1px solid gray;
-    box-shadow: none;
-    padding: 20px 50px;
-    font-size: 20px;
-    color: #c0bdbd;
-    background-color: #3c3c3c;
-
+  margin-bottom: 25px;
+  width: 400px;
+  display: block;
+  border: 1px solid gray;
+  box-shadow: none;
+  padding: 20px 50px;
+  font-size: 20px;
+  color: #c0bdbd;
+  background-color: #3c3c3c;
 }
 
 .iead {
-    display: inline-block;
-    width: 29%;
-    background: #3c3c3c;
-    margin-bottom: 5px;
-    background-size: cover;
-    background-position: center center;
+  display: inline-block;
+  width: 29%;
+  background: #3c3c3c;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  background-size: cover;
+  background-position: center center;
 }
 
 .dfg {
-    color: #ffffff;
-    font-size: 35px;
-    padding: 170px 0px 45px 45px
+  color: #ffffff;
+  font-size: 35px;
+  padding: 170px 0px 45px 45px;
 }
 
 .large {
-    width: 40%;
+  width: 40%;
 }
 
 .topworkz {
-    background-image: url(./Layer5copy.png);
+  background-image: url(./Layer5copy.png);
 }
 
 .joint {
-    background-image: url(./Layer5copy3.png);
+  background-image: url(./Layer5copy3.png);
 }
 
 .market {
-    background-image: url(./Layer5copy2.png);
+  background-image: url(./Layer5copy2.png);
 }
 
 .worktop {
-    background-image: url(./Layer5copy4.png);
+  background-image: url(./Layer5copy4.png);
 }
 
 .lable {
-    background-image: url(./label.png);
+  background-image: url(./label.png);
 }
 
 .kyiv {
-    background-image: url(./kyiv.png);
+  background-image: url(./kyiv.png);
 }
 
 .foot {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 span {
-    font-size: 14px;
-    padding: 5px;
+  font-size: 14px;
+  padding: 5px;
 }
 
 .elips {
-    padding-top: 25px;
+  line-height: 120px;
 }

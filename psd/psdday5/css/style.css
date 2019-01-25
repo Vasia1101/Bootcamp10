@@ -1,0 +1,150 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* outline: 1px solid red; */
+
+}
+
+body {
+    background: #ffffff;
+    max-width: 1600px;
+}
+
+.wrapper {
+    max-width: 950px;
+    margin: auto;
+}
+
+.first {
+    width: 100%;
+    background: linear-gradient(to right, #2a2acf 25%, #86a8e7 50%, #09e7d8 25%);
+    background-image: url(./forest1.png);
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+}
+
+.navigat {
+    float: right;
+    max-width: 526px;
+    display: block;
+    text-align: center;
+
+
+}
+
+.navigati {
+    float: left;
+    list-style: none;
+    padding: 10px;
+
+}
+
+.navigation {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #ffffff;
+    line-height: 10px;
+}
+
+.navigation:hover {
+    color: #09e7d8;
+}
+
+.logos {
+    float: left;
+    padding-top: 8px;
+}
+
+.logos::after {
+    content: "tajam";
+    font-size: 30px;
+    color: #ffffff;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.logose:hover {
+    background: #00e0d0;
+
+}
+
+.logos:hover::after {
+    color: #00e0d0;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.aria {
+    font-size: 32px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 228px;
+}
+
+.aria::after {
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #00e0d0;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+
+
+
+}
+
+.btn {
+    font-size: 14px;
+    padding: 52px 100px 140px 100px;
+    text-align: center;
+
+}
+
+.butt {
+    padding: 10px 15px;
+    display: block;
+    border: 1px solid #00e0d0;
+    box-shadow: none;
+    font-size: 16px;
+    color: #00e0d0;
+    background-color: transparent;
+    text-transform: uppercase;
+    margin-bottom: 207px;
+
+}
+
+.raddio {
+    display: inline-block;
+}
+
+.logobig {
+    padding-top: 70px;
+    float: left;
+}
+
+.ariasecond {
+    text-transform: uppercase;
+    font-size: 22px;
+    padding: 71px 0 28px 335px;
+    color: #413d4b;
+
+}
+
+.bth {
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px 0 10px 335px;
+    color: #413d4b;
+}
+
+.lft {
+    margin: 0 0 70px 335px;
+}
