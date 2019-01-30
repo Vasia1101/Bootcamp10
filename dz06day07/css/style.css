@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+    /* background-color: white; */
+}
+body{
+    max-width: 1920px;
+}
+ul,li,a{
+    list-style: none;
+    text-decoration: none;
+}
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.pade-heder{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: o auto;
+    margin-top: 40px;
+    margin-bottom: 127px;
+    align-items: baseline;
+}
+.menu{
+    display: flex;
+    max-width: 500px;
+    height: auto;
+}
+.logo{
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-size: 30px;
+color: #95e1d3;
+text-align: left;
+}
+.menu-item{
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+text-align: center;
+text-transform: uppercase;
+text-align: center;
+margin-right: 42px;
+padding: 15px;
+}
+a{
+    color: #95e1d3;
+}
+.menu-item:hover::after{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color:  #f38181;
+    margin: auto;
+    margin-top: 12px;
+    }
+a:hover {
+    color: #f38181;
+}
+.curs{
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Kaushan Script', cursive;
+font-size: 24px;
+color: rgba(51, 51, 51, 255);
+padding-bottom: 22px;
+}
+.amazin{
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+color: rgba(51, 51, 51, 255);
+text-transform: uppercase;
+}
+.amazin::after{
+    content: '';
+    display: block;
+    margin: auto;
+    width: 60px;
+    height: 3px;
+    background-color:  #f38181;
+    margin-top: 42px;
+    margin-bottom: 66px;
+
+}
+.catalog{
+    display: flex;
+    width: 100%;
+    text-align: left;
+    flex-wrap:wrap; 
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 92px;
+
+    
+}
+.praca{
+    width: 269px;
+    height: auto;
+  margin-left: 90px;
+    position: relative;
+    
+}
+.servi{
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+color: rgba(51, 51, 51, 255);
+letter-spacing: 2px;
+text-transform: capitalize;
+padding-bottom: 20px;
+
+}
+.service{
+    font-family: Roboto-Regular, AdobeInvisFont, MyriadPro-Regular;
+font-size: 15px;
+color: rgba(153, 153, 153, 255);
+padding-bottom: 101px;
+
+}
+.photo::before{
+    content: url(./ALARM.png);
+    display: block;
+    position: absolute;
+    left:-60px;
+    top:0;    
+
+}
+.web::before{
+    content: url(./LINE\ GRAPH.png);
+    display: block;
+    position: absolute;
+    left:-60px;
+    top:0;    
+}
+.cret::before{
+    content: url(./COMPUTER\ _\ OK.png);
+    display: block;
+    position: absolute;
+    left:-60px;
+    top:0;    
+}
+.seo::before{
+    content: url(./BOOK\ 2.png);
+    display: block;
+    position: absolute;
+    left:-60px;
+    top:0;    
+}
+.ccst::before{
+        content: url(./HOME.png);
+        display: block;
+        position: absolute;
+        left:-60px;
+        top:0;    
+    }
+    .digit::before{
+        content: url(./IMAGE.png);
+        display: block;
+        position: absolute;
+        left:-60px;
+        top:0;    
+    }
+    .dolor{
+        padding: 46px 142px 80px 142px;
+    }
+    .picture{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        margin-bottom: 83px;
+    }
+    .pic{
+        padding-right: 28px;
+    }
+    .wrok{
+        font-family: Roboto-LightItalic, AdobeInvisFont, MyriadPro-Regular;
+font-size: 15px;
+color: rgba(153, 153, 153, 255);
+font-style: oblique;
+    }
+    img{
+        margin-bottom:31px;
+        
+    }
+    .foot{
+        display:flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 12px;
+    }
+    button{
+        padding: 14px 33px;
+        background-color: aqua;
+        color:white;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+    }
+    .last:hover{
+        color: #f38181;
+    }
+
+
+    
