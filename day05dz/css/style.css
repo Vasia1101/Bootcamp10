@@ -126,6 +126,7 @@ padding: 14px;
 span, .catalog-item:hover{
     background-color: #1abc9c;
     opacity: 0.5;
+    cursor:zoom-in;
 }
 .catal-tem{
     float:left;

@@ -163,16 +163,18 @@ color: rgba(255, 255, 255, 255);
 text-align: center;
 padding: 14px;
 }
-
-.catalog-item:hover span,img {
+.catalog-item:hover span,
+.catalog-item:hover img {
     background-color: #1abc9c;
     cursor: pointer;
-    /* opacity: 0.5; */
+    opacity: 0.5;
 }
 img{
-    /* padding: 10px; */
+   display: block;
     text-align: center;
-
+    width: 100%;
+    height: auto;
+    z-index: -1;
 }
 .foter{
     background-color: #323232;
@@ -189,4 +191,113 @@ img{
    }
    h5:hover{
        color:#46bfa9;
+   }
+   .card-image{
+position: relative;
+   }
+  .card{
+    opacity: 0;
+       display: block;
+       border: 1px solid white;
+       margin: 0;
+       padding: 0;
+       width: 160px;
+       height: 50px;
+       background-color: transparent;
+       background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+       cursor: pointer;
+       position: absolute;
+       background-image: url(./hert.png);
+       top: 45%;
+       left: 50%; 
+       transform: translateX(-50%);
+       z-index: 3;
+       transition: opacity 0.5s linear;
+   }
+   .social-icons{
+       opacity: 0;
+       position: absolute;
+       list-style: none;
+       padding: 0;
+       margin: 0;
+       top: 25%;
+       left: 50%; 
+       width: 100%;
+       height: 90px;
+       transform: translateX(-50%);
+       transition: opacity 0.5s linear;
+       z-index: 2;
+   }
+   .catalog-item:hover .social-icons,
+   .catalog-item:hover .card{
+       opacity: 1;
+
+   }
+   .card-image:hover button{
+    background-color: #323232;
+   }
+   .social-icons a:hover{
+       background-color: #46bfa9;
+   }
+   .social-icons li{
+       display: inline-block;
+   }
+   .social-icons a{
+       width: 50px;
+       height: 50px;
+       display:block;
+       background-color:transparent;
+       border: 1px solid white;
+       
+   }
+   .cas{
+width: 90%;
+height: 90%;
+bottom: 0;
+top: 5%;
+left:5%;
+background-color: #737373;
+position: absolute;
+z-index: 1;
+/* transform: translateX(-10%); */
+opacity: 0;
+transition: opacity 0.5s linear;
+
+   }
+   .catalog-item:hover .cas{
+       opacity: 0.5;
+   }
+   .hert{
+    background-image: url(./hert.png);
+    background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+   }
+   .cena{
+       background: transparent;
+       font-family: OpenSans, AdobeInvisFont, MyriadPro-Regular;
+font-size: 14px;
+color: rgba(255, 255, 255, 255);
+text-align: right;
+padding-right: 10px;
+   }
+   .cena::before{
+       content: url(./add.png) ;
+       display:inline-block;
+       vertical-align: middle;      
+   }
+   
+   .strela{
+    background-image: url(./strila.png);
+    background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+   }
+   .three{
+    background-image: url(./three.png);
+    background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
    }
