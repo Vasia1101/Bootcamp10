@@ -261,7 +261,7 @@ left:5%;
 background-color: #737373;
 position: absolute;
 z-index: 1;
-/* transform: translateX(-10%); */
+
 opacity: 0;
 transition: opacity 0.5s linear;
 
@@ -269,13 +269,7 @@ transition: opacity 0.5s linear;
    .catalog-item:hover .cas{
        opacity: 0.5;
    }
-   .hert{
-    background-image: url(./hert.png);
-    background-position: center center;
-        background-size: contain;
-        background-repeat: no-repeat;
-   }
-   .cena{
+      .cena{
        background: transparent;
        font-family: OpenSans, AdobeInvisFont, MyriadPro-Regular;
 font-size: 14px;
@@ -288,16 +282,18 @@ padding-right: 10px;
        display:inline-block;
        vertical-align: middle;      
    }
-   
+   .hert{
+    background-image: url(./hert.png);
+    background-position: center center;
+       background-repeat: no-repeat;
+   }
    .strela{
     background-image: url(./strila.png);
     background-position: center center;
-        background-size: contain;
-        background-repeat: no-repeat;
+            background-repeat: no-repeat;
    }
    .three{
     background-image: url(./three.png);
     background-position: center center;
-        background-size: contain;
-        background-repeat: no-repeat;
+               background-repeat: no-repeat;
    }

@@ -208,6 +208,95 @@ font-family: 'Montserrat', sans-serif;
     .last:hover{
         color: #f38181;
     }
+    .card-image{
+        position: relative;
+           }
+           img{
+            display: flex;
+             text-align: center;
+             width: 383px;
+            height: 473px;
+             z-index: -1;
+         }
+         .social-icons{
+             display: flex;
+             background-color: #fce38a;
+            opacity: 0;
+            position: absolute;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            top: 45%;
+            left: 50%; 
+            transform: translateX(-50%);
+            transition: opacity 0.5s linear;
+            z-index: 3;
+            
+        }
+        .pic:hover .social-icons{
+            opacity: 1;
+        }
+        .social-icons a{
+            width: 56px;
+            height: 56px;
+            display:block;
+            background-color:transparent;
+            border-right: 1px solid #f38181;
+            
+            
+        }
+        .social-icons a:hover{
+            background-color: #95e1d3;
+        }
+        .cas{
+            width: 383px;
+            height: 473px;
+           top: -4%;
+            right:3%;
+            background: linear-gradient(to top, #fce38a,#f38181);
+            position: absolute;
+            z-index: 2;
+            opacity: 0;
+            transition: opacity 0.5s linear;
+        }
+        .pic:hover .cas{
+            opacity: 0.9;
+        }
+        .cas1{
+            width: 383px;
+            height: 473px;
+           top: 0;
+           background-color: #46bfa9;
+            position: absolute;
+            z-index: 1;
+            opacity: 0;
+           
+        }
+        .pic:hover .cas1{
+            opacity: 0.7;
+        }
+        .face{
+            background-image: url(./facebook.png);
+            background-position: center center;
+        
+        background-repeat: no-repeat;
+        }
+        .twit{
+            background-image: url(./twitter.png);
+            background-position: center center;
+                background-repeat: no-repeat;
+        }
+        .pint{
+            background-image: url(./pinterest.png);
+            background-position: center center;
+                background-repeat: no-repeat;
+        }
+        .insta{
+            background-image: url(./instagram.png);
+            background-position: center center;
+                background-repeat: no-repeat;
+        }
+
 
 
     
