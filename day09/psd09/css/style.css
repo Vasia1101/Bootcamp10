@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background:#ada6a0;
+    max-width: 1365px;
+    height: auto;
+    text-align: center;
+    margin: auto;
+}
+ul,li,a{
+    list-style: none;
+    text-decoration: none;
+}
+.wrapper{
+    max-width: 930px;
+    margin: auto;
+    padding: 15px;
+    background-color: white;
+    margin-bottom: 15px;
+}
+
+h1{
+    text-transform: capitalize;
+    font-family: Calibri, Rockwell, MyriadPro-Regular, ﻿AdobeInvisFont;
+font-size: 64px;
+color: #b8b5b3;
+}
+.menu{
+    max-width: 930px;
+    margin: auto;
+    padding: 15px;
+    background-color: white;
+    margin-bottom: 15px;
+}
+.menus{
+    display: flex;
+}
+
+.menu-links{
+    width: 49px;
+    height: auto;
+   margin-left: 45px;
+   text-transform: uppercase;
+   font-family: Rockwell, MyriadPro-Regular, AdobeInvisFont;
+font-size: 16px;
+color: rgba(91, 91, 91, 255);
+}
+
+.first{
+background-image: url(./block1.png);
+height: 375px;
+background-size: cover;
+background-position: center center;
+position: relative;
+}
+.kyb{
+    background-color:transparent;
+}
+.kyb1{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+}
+.kyb2{
+    position: absolute;
+    top: 45%;
+   right:5%;
+}
+.ser{
+    background:#ada6a0;
+    padding: 0;
+}
+.catalog{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.catalog-item{
+    width: 25%;
+    height: auto;
+    background-color: white;
+    padding: 10px;
+    margin-right: 10px;
+    text-align: right;
+}
+.saga{
+    text-align: justify;
+    text-indent: 50px;
+    padding-bottom: 24px;
+    padding-top: 24px;
+}
+.frt{
+    margin-right: 0;
+}
+.sidf{
+display: flex;
+justify-content: space-between;
+}
+.side{
+    display: flex;
+    flex-wrap: wrap;
+width: 250px;
+height: auto;
+}
+.side-bar{
+    /* width: 40%;
+    height: 40%; */
+    padding: 5px;
+}
+h4{
+    font-family: ﻿Calibri, ﻿Rockwell, ﻿MyriadPro-Regular, ﻿AdobeInvisFont;
+font-size: 18px;
+color: rgba(0, 0, 0, 255);
+text-align: justify;
+}
+.next{
+    text-align: right;
+}
+.spice{
+    text-align: justify;
+    text-indent: 50px;
+    padding-bottom: 14px;
+    padding-top: 14px;
+}
+.foot{
+text-align: left;
+padding-bottom: 24px;
+    padding-top: 24px;
+}
