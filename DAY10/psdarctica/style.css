@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 1px solid purple;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+    align-items: center;
+    max-width: 480px;
+    margin: auto;
+}
+ul,li,a{
+    text-decoration: none;
+    list-style: none;
+}
+img,span{
+    display: block;
+}
+.menu{
+display: flex;
+justify-content: space-between;
+width: 100%;
+height: auto;
+background-color: #ffffff;
+padding: 10px;
+}
+.menu-logo{
+    font-family: ﻿Molle-Regular, ﻿AdobeInvisFont, ﻿Courier;
+font-size: 1rem;
+color: #818181;
+}
+.menu-item:hover{
+background-color: #00c7fc;
+}
+.pul{
+    width: 100%;
+    height: 50px;
+    background-color: #546279;
+}
+.land{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    background-color: #222c40;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.art{
+    font-family: ﻿Molle-Regular, ﻿AdobeInvisFont, ﻿Courier;
+font-size: 2rem;
+color: rgba(255, 255, 255, 255);
+padding: 10px;
+}
+.art::before{
+content: "\2609";
+display: block;
+width: 5px;
+height: 5px;
+position: absolute;
+left: 47%;
+top: 12%;
+
+}
+.art::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin: auto;
+    background-color: #f0f1f2;
+}
+.donce{
+    font-family: Lato-Regular, AdobeInvisFont, Courier;
+font-size: 0.8rem;
+color: rgba(255, 255, 255, 255);
+text-align: center;
+padding: 10px;
+}
+.teme{
+    font-family: Lato-Regular, AdobeInvisFont, Courier;
+    font-size: 0.7rem;
+color: rgba(255, 255, 255, 255);
+background-color: #222c40;
+padding: 5px 10px;
+border-radius: 5px;
+}
+.fully{
+    background-color: #ffffff;
+    text-align: center;
+}
+.donec{
+    background-color:#ffffff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.grafa1{
+    display: flex;
+    width: 100%;
+    height: auto;
+   
+}
+.grafa2{
+    display: flex;
+    width: 100%;
+    height: auto;
+   
+}
+.dec{
+    width: 50%;
+    height: auto;
+}
+svg{
+    background-color: #546279;
+    border-radius: 50px;   
+}
+.layd{
+    font-family: ﻿Lato-Regular, ﻿AdobeInvisFont, ﻿Courier;
+font-size: 1.3rem;
+color: rgba(61, 80, 111, 255);
+padding: 10px;
+}
+.cystom{
+    font-family: ﻿Lato-Regular, ﻿AdobeInvisFont, ﻿Courier;
+font-size: 0.8;
+color: rgba(127, 144, 165, 255);
+padding: 10px;
+position: relative;
+}
+.cystom::after{
+    content: '';
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: #d4dae1;
+    margin: auto;
+    margin-top: 10px;
+}
+.cystom::before{
+    content: "\2609";
+    display: block;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    left: 48%;
+    top: 55%;
+    }
+    .dolor{
+        font-family: Lato-Regular, AdobeInvisFont, Courier;
+font-size: 0.6rem;
+color: rgba(127, 144, 165, 255);
+padding: 10px;
+    }
+    .nauz{
+        font-family: ﻿Lato-Regular, ﻿AdobeInvisFont, ﻿Courier;
+font-size: 1.1rem;
+color: rgba(61, 80, 111, 255);
+padding: 10px;
+    }
+    .cente{
+        background-color: #222c40;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .refle{
+        font-family: ﻿Lato-Light, ﻿AdobeInvisFont, ﻿Courier;
+font-size: 1.1rem;
+color: rgba(255, 255, 255, 255);
+padding: 10px;
+    }
+    .prima{
+        font-family: ﻿Lato-Regular, ﻿AdobeInvisFont, ﻿Courier;
+font-size: 0.7rem;
+color: rgba(255, 255, 255, 255);
+padding: 20px;
+    }
+    .look{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #ffffff;
+    }
+    .luck{
+        width: 20%;
+        height: auto;
+        background-color: #546279;
+        padding: 5px;
+        margin: 5px;
+        font-family: ﻿Lato-Regular, ﻿AdobeInvisFont, ﻿Courier;
+        font-size: 0.7rem;
+        color: rgba(255, 255, 255, 255);
+        margin-bottom: 15px;
+}
+.luck:hover{
+    background-color:#00c7fc;
+}
+.kybu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.kut{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    margin: auto;
+}
+.kut1{
+    width: 50%;
+    height: 200px;
+    background-color: #546278;
+    color: #546278;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+.kut1:hover{
+    background-color: #222c40;
+    color: #ffffff;
+    font-family: ﻿Lato-Bold, ﻿AdobeInvisFont, ﻿Courier;
+font-size: 20pt;
+color: rgba(255, 255, 255, 255);
+text-align: right;
+}
+.nula{
+    width: 100%;
+    height: auto;
+    background-color: #222c40;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.qura{
+    width: 50%;
+    height: auto;
+    background-color: #546278;
+    padding: 10px;
+    margin: 5px;
+}
+.syt{
+    background-color: #222c40;
+    text-align: left;
+  }
+.psum{
+    font-family: ﻿Lato-Bold, ﻿AdobeInvisFont, ﻿Courier;
+font-size: 0.8rem;
+color: rgba(255, 255, 255, 255);
+padding: 5px;
+}
+.vel{
+    font-size: 0.5rem;
+    padding: 5px;
+}
+.tin::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 5px 0;
+}
+.musp::before{
+    content: "\00D7";
+    display: block;
+    text-align: right;
+    color: #ffffff;
+}
+.strelas{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+
+}
+@media(min-width: 768px) {
+
+    .section {
+       
+        flex-direction: column;
+        max-width: 960px;
+    }
+    @media(min-width: 1024px) {
+        .section {
+            flex-direction: column;
+        }
+    
+        .container, .container2 {
+            width: 80%;
+            margin: auto;
+        }
+        .kybu{
+            flex-direction: row;
+        }
+    }

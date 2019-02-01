@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #292c34;
+    outline: 1px solid red;
+}
+ul,li,a {
+    text-decoration: none;
+    list-style: none;
+}
+.wrapper{
+    width: 600px;
+    margin: auto;
+    
+}
+header{
+    max-width: 800px;
+    height: auto;
+    background-color: #24242c;
+   
+}
+.first{
+    max-width: 800px;
+    background-color: #e0ad2f;
+}
+.memu{
+    display: flex;
+    padding: 27px;
+    justify-content: space-between;
+  width: 100%;
+  height: auto;
+  background-color: #24242c;
+}
+.main{
+display: flex;
+    background-color: #e0ad2f;
+    flex-direction: column;
+}
+span{
+    background-color: transparent;
+    display: block;
+}
+.luxo{
+    font-family: ﻿OpenSans, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+font-size: 2rem;
+color: rgba(255, 255, 255, 255);
+padding-top: 160px;
+padding-bottom: 30px;
+}
+.dolo{
+    font-family: ﻿OpenSans, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+font-size: 1rem;
+color: rgba(36, 36, 44, 255);
+padding-bottom: 45px;
+}
+button{
+    font-family: ﻿OpenSans, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+font-size: 0.9rem;
+color: rgba(255, 255, 255, 255);
+padding: 12px 39px;
+border-radius: 5px;
+margin-bottom: 145px;
+}
+.second{
+    background-color: beige;
+    max-width: 800px;
+}
+.offer{
+    display: flex;
+    background-color: beige;
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+   align-items: center;
+}
+.sed{
+   background-color: beige;
+   display: flex;
+   width: 33,33%;
+   height: auto;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+   
+}
+.image{
+    width: 190px;
+    height: 150px;
+    background-color: #24242c;
+    margin-top: 27px;
+    margin-bottom: 22px;
+    }
+    .uxp{
+        font-family: ﻿OpenSans-Semibold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+font-size: 1.3rem;
+color: rgba(36, 36, 44, 255);
+margin-bottom: 14px;
+    }
+    .odo{
+        font-family: ﻿Lora-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+font-size: 0.7rem;
+color: rgba(151, 153, 155, 255);
+margin-bottom: 24px;
+    }
+    .por{
+        font-family: ﻿OpenSans, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+font-size: 0.8rem;
+color: rgba(151, 153, 155, 255);
+text-align: left;
+padding-bottom: 17px;
+    }
+    .cens{
+        font-family: ﻿OpenSans-Semibold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+font-size: 1.2rem;
+color: rgba(36, 36, 44, 255);
+    }
+    
