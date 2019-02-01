@@ -1,0 +1,276 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+   
+    margin: auto;
+}
+img{
+    display: block;
+}
+ul,li,a{
+    text-decoration: none;
+    list-style: none;
+}
+.wrapper{
+    max-width: 480px;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    }
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.hugo{
+    max-width: 50%;
+    height: auto;
+
+}
+.menu-burger{
+    padding: 20px;
+    max-width: 50%;
+    height: auto;
+}
+.jump{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./jump.png);
+    width: 480px;
+    height:400px;
+    background-size: cover;
+}
+.futured{
+    max-width: 480px;
+
+display: flex;
+flex-direction: column;
+   }
+.beat{
+    display: flex;
+    max-width: 480px;
+    height: 400px;
+    background-image: url(./webwill.png);
+    background-size: cover;
+    background-position: center center;
+    justify-content: center;
+    align-items: center;
+}
+.koloimage{
+    display: flex;
+}
+.kolo{
+
+width: 100px;
+height: 31px;
+padding-right: 10px;
+}
+.plulog{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:left;
+    max-width: 480px;
+    height: 400px;
+}
+.tured{
+    font-family: Roboto-Thin, AdobeInvisFont, MyriadPro-Regular;
+font-size: 48px;
+color: rgba(37, 37, 37, 255);
+text-align: left;
+margin-bottom: 29px;
+}
+.out{
+font-family: Roboto-Light, AdobeInvisFont, MyriadPro-Regular;
+font-size: 18px;
+color: rgba(149, 149, 149, 255);
+text-align: left;
+margin-bottom: 29px;
+}
+.alex{
+    max-width: 480px;
+display: flex;
+flex-direction: column;
+}
+.vidos{
+    width: 480px;
+    height: 400px;
+    background-image: url(./deadmau5-cube.png);
+    background-size: cover;
+    background-position: center center;
+}
+.plu{
+    display: flex;
+    max-width: 480px;
+    height: 400px;
+    justify-content: center;
+    flex-direction: column;
+ }
+ .folo{
+    font-family: Roboto-Bold, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 14px;
+    color: rgba(149, 149, 149, 255);
+    text-align: left;
+ }
+ .proga{
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+ }
+ .proga1{
+    display: flex;
+    max-width: 480px;
+    height: 400px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+ }
+ .event1{
+     display: flex;
+     flex-direction: column;
+     padding: 10px;
+
+
+ }
+ .event2{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+}
+ .proga2{
+    display: flex;
+    max-width: 480px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+ }
+ .glava{
+     display: flex;
+     max-width: 480px;
+     flex-direction: column;
+ }
+ .glava-box1{
+     display: flex;
+     flex-wrap: wrap;
+ }
+ .mal{
+     max-width: 33.33%;
+     
+ }
+ .glava-box2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.galery{
+width: 100%;
+}
+.fot{
+    /* align-items: baseline; */
+    margin: 10px;
+    padding: 10px;
+}
+.last{
+padding-right:50px;
+}
+@media (min-width: 768px){
+    .wrapper {
+        max-width:768px;
+    }
+    .jump {
+        width: 768px;
+    }
+
+    .glava {
+        max-width: 768px;
+    }
+    .futured{
+        max-width: 768px;}
+        .plulog{
+            max-width:768px;
+        }
+        .beat{
+            max-width: 768px;
+        }
+        .alex{
+            max-width: 768px;
+        }
+        .vidos{
+            width: 768px;
+        }
+        .plu{
+            max-width: 768px;
+        }
+        .progra{
+            max-width: 768px;
+        }
+        .proga1{
+            max-width: 768px;
+        }
+        .proga2{
+            max-width: 768px;
+        }
+        .glava{
+            max-width: 768px;
+        }
+        .glava-box1{
+            max-width: 768px;
+        }
+        .glava-box2{
+            max-width: 768px;
+        }
+}
+@media (min-width: 1024px){
+    .wrapper {
+        max-width:1024px;
+    }
+    .jump {
+        width: 1024px;
+    }
+
+    .glava {
+        max-width: 1024px;
+    }
+    .futured{
+        max-width: 1024px;}
+        .plulog{
+            max-width:1024px;
+        }
+        .beat{
+            max-width: 1024px;
+        }
+        .alex{
+            max-width: 1024px;
+        }
+        .vidos{
+            width: 1024px;
+        }
+        .plu{
+            max-width: 1024px;
+        }
+        .progra{
+            max-width: 1024px;
+        }
+        .proga1{
+            max-width: 1024px;
+        }
+        .proga2{
+            max-width: 1024px;
+        }
+        .glava{
+            max-width: 1024px;
+        }
+        .glava-box1{
+            max-width: 1024px;
+        }
+        .glava-box2{
+            max-width: 1024px;
+        }
+}
