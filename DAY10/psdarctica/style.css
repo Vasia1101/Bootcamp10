@@ -9,7 +9,7 @@
     flex-direction: column;
     background-color: blueviolet;
     align-items: center;
-    max-width: 480px;
+    /* max-width: 480px; */
     margin: auto;
 }
 ul,li,a{
@@ -25,7 +25,7 @@ justify-content: space-between;
 width: 100%;
 height: auto;
 background-color: #ffffff;
-padding: 10px;
+padding: 2%;
 }
 .menu-logo{
     font-family: ﻿Molle-Regular, ﻿AdobeInvisFont, ﻿Courier;
@@ -37,14 +37,14 @@ background-color: #00c7fc;
 }
 .pul{
     width: 100%;
-    height: 50px;
+    height: 3.125rem;
     background-color: #546279;
 }
 .land{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 200px;
+    height: 12.5rem;
     background-color: #222c40;
     align-items: center;
     text-align: center;
@@ -54,13 +54,13 @@ background-color: #00c7fc;
     font-family: ﻿Molle-Regular, ﻿AdobeInvisFont, ﻿Courier;
 font-size: 2rem;
 color: rgba(255, 255, 255, 255);
-padding: 10px;
+padding: 2%;
 }
 .art::before{
 content: "\2609";
 display: block;
-width: 5px;
-height: 5px;
+width: 0.3125rem;
+height: 0.3125rem;
 position: absolute;
 left: 47%;
 top: 12%;
@@ -70,7 +70,7 @@ top: 12%;
     content: '';
     display: block;
     width: 100%;
-    height: 2px;
+    height: 0.125rem;
     margin: auto;
     background-color: #f0f1f2;
 }
@@ -79,14 +79,14 @@ top: 12%;
 font-size: 0.8rem;
 color: rgba(255, 255, 255, 255);
 text-align: center;
-padding: 10px;
+padding: 2%;
 }
 .teme{
     font-family: Lato-Regular, AdobeInvisFont, Courier;
     font-size: 0.7rem;
 color: rgba(255, 255, 255, 255);
 background-color: #222c40;
-padding: 5px 10px;
+padding: 2% 4%;
 border-radius: 5px;
 }
 .fully{
@@ -96,20 +96,18 @@ border-radius: 5px;
 .donec{
     background-color:#ffffff;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 3%;
 }
 .grafa1{
     display: flex;
     width: 100%;
     height: auto;
-   
-}
+   }
 .grafa2{
     display: flex;
     width: 100%;
     height: auto;
-   
-}
+   }
 .dec{
     width: 50%;
     height: auto;
@@ -122,23 +120,23 @@ svg{
     font-family: ﻿Lato-Regular, ﻿AdobeInvisFont, ﻿Courier;
 font-size: 1.3rem;
 color: rgba(61, 80, 111, 255);
-padding: 10px;
+padding: 2%;
 }
 .cystom{
     font-family: ﻿Lato-Regular, ﻿AdobeInvisFont, ﻿Courier;
-font-size: 0.8;
+font-size: 0.8rem;
 color: rgba(127, 144, 165, 255);
-padding: 10px;
+padding: 2%;
 position: relative;
 }
 .cystom::after{
     content: '';
     display: block;
     width: 50%;
-    height: 2px;
+    height: 0.125rem;
     background-color: #d4dae1;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 4%;
 }
 .cystom::before{
     content: "\2609";
@@ -153,13 +151,13 @@ position: relative;
         font-family: Lato-Regular, AdobeInvisFont, Courier;
 font-size: 0.6rem;
 color: rgba(127, 144, 165, 255);
-padding: 10px;
+padding: 4%;
     }
     .nauz{
         font-family: ﻿Lato-Regular, ﻿AdobeInvisFont, ﻿Courier;
 font-size: 1.1rem;
 color: rgba(61, 80, 111, 255);
-padding: 10px;
+padding: 4%;
     }
     .cente{
         background-color: #222c40;
@@ -171,13 +169,13 @@ padding: 10px;
         font-family: ﻿Lato-Light, ﻿AdobeInvisFont, ﻿Courier;
 font-size: 1.1rem;
 color: rgba(255, 255, 255, 255);
-padding: 10px;
+padding: 4%;
     }
     .prima{
         font-family: ﻿Lato-Regular, ﻿AdobeInvisFont, ﻿Courier;
 font-size: 0.7rem;
 color: rgba(255, 255, 255, 255);
-padding: 20px;
+padding: 8%;
     }
     .look{
         width: 100%;
@@ -222,8 +220,8 @@ padding: 20px;
     height: 200px;
     background-color: #546278;
     color: #546278;
-    margin: 10px;
-    padding: 20px;
+    margin: 4%;
+    padding: 8%;
     text-align: center;
     vertical-align: middle;
 }
@@ -241,14 +239,14 @@ text-align: right;
     background-color: #222c40;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 4%;
 }
 .qura{
     width: 50%;
     height: auto;
     background-color: #546278;
-    padding: 10px;
-    margin: 5px;
+    padding: 4%;
+    margin: 2%;
 }
 .syt{
     background-color: #222c40;
@@ -258,11 +256,11 @@ text-align: right;
     font-family: ﻿Lato-Bold, ﻿AdobeInvisFont, ﻿Courier;
 font-size: 0.8rem;
 color: rgba(255, 255, 255, 255);
-padding: 5px;
+padding: 2%;
 }
 .vel{
     font-size: 0.5rem;
-    padding: 5px;
+    padding: 2%;
 }
 .tin::after{
     content: '';
@@ -270,7 +268,7 @@ padding: 5px;
     width: 100%;
     height: 2px;
     background-color: #ffffff;
-    margin: 5px 0;
+    margin: 2% 0;
 }
 .musp::before{
     content: "\00D7";
@@ -282,11 +280,118 @@ padding: 5px;
     width: 100%;
     margin: auto;
     text-align: center;
-    padding: 10px;
+    padding: 4%;
     background-color: #ffffff;
 
 }
-@media(min-width: 768px) {
+.sive{
+    background-color: #222c40;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    }
+    .sed{
+        font-family: Lato-Regular, AdobeInvisFont, Courier;
+font-size: 1.3rem;
+color: rgba(255, 255, 255, 255);
+padding: 2%;
+    }
+    .outus{
+        font-family: ﻿Lato-Regular, ﻿AdobeInvisFont, ﻿Courier;
+        font-size: 0.8rem;
+        color: rgba(255, 255, 255, 255);
+        position: relative;
+        padding: 2%;
+    }
+    .outus::after{
+        content: '';
+        display: block;
+        width: 50%;
+        height: 0.125rem;
+        background-color: #d4dae1;
+        margin: auto;
+        margin-top: 4%;
+    }
+    .outus::before{
+        content: "\2609";
+        display: block;
+        width: 5px;
+        height: 5px;
+        position: absolute;
+        left: 48%;
+        top: 57%;
+        }
+        .molete{
+            font-family: Lato-Regular, AdobeInvisFont, Courier;
+font-size: 0.7rem;
+color: rgba(255, 255, 255, 255);
+padding: 2%;
+        }
+        .udo{
+            width: 100%;
+            height: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;    
+        }
+        .sumdo1{
+            display: flex;
+            width: 100%;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+            }
+            .kolo{
+                width: 50%;
+                padding: 2%;
+                text-align: center;
+                padding: 10%;
+            }
+            .govn{
+                background-color:#161f32;
+                padding: 15% 15%;
+                border-radius: 50%;
+                font-size: 0.8rem;
+                color: #ffffff;
+                border: 2px solid white;
+                /* opacity: 0; */
+            }
+            .govn:hover{
+                opacity: 1;
+                
+            }
+            .doert{
+
+                font-family: Lato-Bold, AdobeInvisFont, Courier;
+font-size: 0.8rem;
+color: rgba(255, 255, 255, 255);
+padding: 20%;
+            }
+            .aerkt{
+                font-family: Lato-Light, AdobeInvisFont, Courier;
+font-size: 0.6rem;
+color: rgba(255, 255, 255, 255);
+            }
+            .afrika{
+                width: 100%;
+                height: auto;
+                padding: 4%;
+                background-color: #161f32;
+            }
+            .hod::before{
+                content: "\00A9";
+                display: inline-block;
+                width: 2%;
+                height: auto;
+                color: #ffffff;
+                font-size: 0.6rem;
+            }
+            .odh::before{
+                content: "\00A7";                
+            }
+
+            
+/* @media(min-width: 768px) {
 
     .section {
        
@@ -305,4 +410,4 @@ padding: 5px;
         .kybu{
             flex-direction: row;
         }
-    }
+    } */
