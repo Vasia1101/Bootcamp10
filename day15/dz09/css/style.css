@@ -1,0 +1,18 @@
+.masth{
+    background-image: url(/dz09/img/Rectangle3.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity:1;
+}
+.team-card-icons{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    top: 30%;
+    left: 60%;
+    z-index: 1;
+    border:2px solid white;
+    
+}

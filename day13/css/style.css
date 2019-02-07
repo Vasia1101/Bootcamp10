@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,li,a{
+    text-decoration: none;
+    list-style: none;
+}
+span{
+    /* font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Rock Salt', cursive; */
+text-transform: uppercase;
+display: block;
+}
+.section{
+width: 100%;
+height: auto;
+display: flex;
+flex-direction: column;
+margin: auto;
+align-items: center;
+justify-content: center;
+}
+.kyb{
+    width: 100%;
+    height: auto;
+    background-color: #41c17d;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+li{
+width: 33,33%;
+height: auto;
+padding: 10%;
+position: relative;
+}
+.abz{
+    font-size: 1.2rem;
+    color: white;
+}
+.text{
+    color: white;
+    font-size: 0.9rem;
+}
+.abz::before{
+    content: url(./Stalking\ You.png);
+    display:block;
+    width: 32px;
+    height: 32px;
+    top: 0%;
+    left: 45%;
+    position: absolute;
+}
+.second{
+    width: 100%;
+    padding: 10%;
+}
+.integer{
+    font-family: ﻿OpenSans-Light, ﻿OpenSans-Semibold, ﻿OpenSans, ﻿MyriadPro-Regular, ﻿AdobeInvisFont;
+font-size: 0.8rem;
+color: rgba(118, 114, 114, 255);
+text-align: center;
+}
+.jon{
+    font-family: RockwellStd-Light, ﻿OpenSans-Semibold, ﻿OpenSans, ﻿MyriadPro-Regular, ﻿AdobeInvisFont;
+font-size: 1rem;
+color: rgba(75, 72, 72, 255);
+text-align: center;
+font-weight: bold;
+padding: 15%;
+position: relative;
+}
+.three{
+    background-color: #41c17d;
+    width: 100%;
+    text-align: center;    
+}
+.join{
+    font-family: ﻿Raleway, ﻿OpenSans, ﻿MyriadPro-Regular, ﻿AdobeInvisFont;
+font-size: 20pt;
+color: rgba(255, 255, 255, 255);
+text-align: center;
+margin: 5%;
+}
+.jon::before{
+    content: url(./West\ copy\ 3.png);
+    display: block;
+    /* background-color: black; */
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+}
+.jon::after{
+    content: url(./West\ copy\ 2.png);
+    display: block;
+    /* background-color: black; */
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 60%;
+    left: 55%;
+}
+input{
+    font-family: ﻿OpenSans, ﻿MyriadPro-Regular, ﻿AdobeInvisFont;
+font-size: 0.7rem;
+color: rgba(65, 193, 125, 255);
+text-align: left;
+width: 50%;
+padding: 2%;
+margin: 5%;
+}
+.footer{
+    width: 90%;
+    text-align: center;
+}
+img{
+    margin: 5%;
+}
+.foot{
+    font-family: OpenSans-Light, OpenSans-Semibold, OpenSans, MyriadPro-Regular, AdobeInvisFont, sans-serif;
+font-size: 0.7rem;
+color: rgba(118, 114, 114, 255);
+text-align: center;
+padding: 5%;
+}
+@media(min-width:768px){
+    .section{
+        /* display: flex;
+        flex-direction: row; */
+    }
+    .ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 5%;
+    }
+    li{
+        max-width:50%;
+    }
+    .abz::before{
+        top: 5%;
+    }
+    input{
+        width: 25%;
+    }
+
+}
+@media(min-width: 1024px){
+    li{
+        max-width:33.33%;
+        
+    }
+    .abz{
+        font-size: 0.9rem;
+        color: white;
+        padding: 1%;
+    }
+    .text{
+        color: white;
+        font-size: 0.7rem;
+        padding: 1%;
+    }
+}
+html{
+    scroll-behavior: smooth;
+}
+#blu{
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+}
+#green{
+    width: 100%;
+    height: 100vh;
+    background-color:green
+}
+#red{
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+}
+.click{
+    /* display: none; */
+
+}
+.container{
+    display: block;
+    
+    width: 100%;
+    /* height: 75vh; */
+}
+.containerLeft{
+width:50%;
+height: 200px;
+background-color: blueviolet;
+
+}
+.containerRight{
+    display: none;
+    width:50%;
+    background-color: yellow;
+    height: 200px;
+    }
+    #dropDown:checked~.containerRight{
+        display: block; }

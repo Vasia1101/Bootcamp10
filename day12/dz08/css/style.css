@@ -241,11 +241,7 @@ footer{
     margin: 5%;
 }
 @media(min-width: 768px) {
-    html {
-        1rem=20px;
-       }
-
-    .section {
+       .section {
        
         flex-direction: column;
         max-width: 960px;
@@ -268,7 +264,7 @@ margin:5% 10%;
     }
     button{
         width: 35%;
-        border-radius: 30px;
+        border-radius: 1.875rem;
     padding: 2% ;
         margin-bottom: 40%; 
 

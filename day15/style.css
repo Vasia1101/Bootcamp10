@@ -1,0 +1,86 @@
+.wrapper{
+    background-color: #b3b3b3;
+    /* height: 100vh; */
+}
+.das{
+    font-family: ﻿Lato-Thin, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+font-size: 2rem;
+color: rgba(0, 0, 0);
+text-align: center;
+}
+.fds{
+    background-color: #b3b3b3;
+}
+.somele{
+    font-family: ﻿Montserrat-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+font-size: 1rem;
+color: rgba(0, 0, 0);
+text-align: center;
+
+}
+.miss{
+    font-family: Montserrat-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+font-size: 2rem;
+color: rgba(0, 0, 0);
+text-align: center;
+margin-bottom: 55px;
+}
+.somele::after{
+    content: '';
+    width: 80px;
+    height: 2px;
+    display: block;
+    margin: auto;
+    background-color: black;
+    margin-top: 10px;
+}
+.turbutt{
+    padding: 10x 15px;
+    font-family: Montserrat-Regular, AdobeInvisFont, MyriadPro-Regular;
+font-size: 0.9rem;
+color: rgba(255, 255, 255);
+text-align: center;
+}
+.verba{
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: middle;
+    background: no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url(/day15/OptionIcon.png);
+}
+.gty{
+background-color: black;
+padding: 20px;
+align-items: baseline;
+}
+.tree{
+    background-color: #ffffff;
+    }
+.jkl{
+    background-color: #b3b3b3;
+}
+.rty{
+    padding: 25px;
+}
+.choturu{
+    background-color: black;
+}
+.pjtiv{
+    background-color: #ffffff;
+    padding: 25px;
+}
+.linera{
+    padding: 25px;
+    text-align: center;
+}
+.otaxjus{
+    display: flex;
+}
+.otax{
+    margin: 5px;
+    width: 300px;
+    height: 300px;
+    background-color: #b3b3b3;
+}
