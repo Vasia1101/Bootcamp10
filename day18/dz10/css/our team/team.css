@@ -1,0 +1,121 @@
+.team-menu{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    
+    
+    
+}
+.team-opus{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    padding: 20px;
+   
+    
+}
+.team-item{
+    position: relative;
+}
+.team-menu__image{
+    width: 383px;
+    height: 473px;
+    background-color: #95e1d3;    
+}
+.team-item-box{
+    width: 383px;
+    height: 473px;
+    background-image: -webkit-gradient(
+        linear, 
+        left top, left bottom, 
+        from(rgba(243, 129, 129, 0.7)), 
+        to(rgba(255, 227, 138, 0.7)));
+    background-image: -webkit-linear-gradient(
+        rgba(243, 129, 129, 0.7), 
+        rgba(255, 227, 138, 0.7));
+    background-image: -o-linear-gradient(
+        rgba(243, 129, 129, 0.7), 
+        rgba(255, 227, 138, 0.7));
+    background-image: linear-gradient(
+        rgba(243, 129, 129, 0.7), 
+        rgba(255, 227, 138, 0.7));
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        
+      
+}
+.team-item-share{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.team-item-share__social-icons{
+    width: 55px;
+    height: 55px;
+    border: 1px solid #f38181;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #fce38a;
+    
+}
+.team-item-share__icons{
+    fill: #f38181;
+}
+.team-item-share__social-icons:hover,
+.team-item-share__social-icons:hover .team-item-share__icons,
+.team-item-share__social-icons:hover .team-item-box{
+    fill: #ffffff;
+    background-color: #f38181;
+    }
+    .box1{
+        position: absolute;
+        top:-10px;
+        left: -10px;
+        display: none;
+    }
+    .box2{
+        position: absolute;
+        top:-10px;
+        left: -10px;
+        display: none;
+    }
+    .box3{
+        position: absolute;
+        top:-10px;
+        left: -10px;
+        display: none;
+    }
+    .first:hover .box1,
+    .second:hover .box2,
+    .tree:hover .box3 {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-shadow: 11px 11px 0px -1px rgba(149,225,211,1);
+box-shadow: 11px 11px 0px 1px rgba(149,225,211,1);
+    }
+    
