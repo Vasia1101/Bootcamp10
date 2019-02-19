@@ -1,0 +1,141 @@
+.blog{
+    width: 100%;
+    background-color: #ffffff;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrappe-blog{
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+ul,li,a{
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.blog-nazva-befor{
+    /* // font-family: realway; підключити шрифт */
+    font-size: 40px;
+    color: #7b6c63;
+    text-transform: uppercase;
+    padding-bottom:30px; 
+}
+.blog-nazva-befor::after{
+    content: '';
+    display: block;
+    width: 80px;
+    height: 2px;
+    margin: 50px auto;
+    background-color:  #7b6c63;
+    // margin-top: 20px;
+    
+}
+.blog-opus{
+    font-size: 20px;
+    max-width:70%; 
+    padding-bottom: 90px;
+    margin: auto;
+    /* // padding: 0 40px 90px 40px;
+    // font-family: realway; підключити шрифт */
+}
+.blog-post-pershuu-item,
+.blog-post-dryguu-item,
+.blog-post-tretiu-item
+
+{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 50px;    
+}
+.blog-post-pershuu-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+.blog-post-pershuu-box,
+.blog-post-dryguu-box,
+.blog-post-tretiu-box{
+    width: 40%;}
+
+.blog-post-pershuu-item{
+    position: relative;
+    z-index: 1;
+}
+.blog-image-pershuu,
+.blog-image-dryguu,
+.blog-image-tretiu
+{
+    max-width: 320px;
+    height:auto;
+       
+}
+.bef-af::before{
+    content: url(./blog-image/left.png);
+    display: block;
+    background-color: red;
+    width: 25px;
+    height: 45px;
+    position: absolute;
+    z-index: 5;
+    top: 40%;
+    left: 15%;
+}
+.bef-af::after{
+    content: url(./blog-image/right.png);
+    display: block;
+    background-color: red;
+    width: 25px;
+    height: 45px;
+    position: absolute;
+    z-index: 5;
+    top: 40%;
+    left: 43%;
+}
+.second{
+    text-align: left;
+    padding:10px; 
+}
+.item-data{
+    text-align: left;
+}
+.blog-post-item-nazva{
+    font-size: 18px;
+    /* // font-family: realway; підключити шрифт */
+}
+.blog-link{
+    width: 75px;
+    height: 75px;
+    background-color: #7b6c63;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.blog-last-links{
+    color: #ffffff;
+    font-size: 15px;
+    padding: 15px;
+}
+@media (min-width:768px;){
+    .blog-post-pershuu-item,
+.blog-post-dryguu-item,
+.blog-post-tretiu-item
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 50px;    
+}
+}
