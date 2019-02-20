@@ -234,3 +234,51 @@ if (numbers.length !==0) {
 }
 console.log('Общая сумма чисел равна: '+ total);
   
+// if (userInput !==null)
+// {
+//     // const inRange = userInput.length = 
+//     let hasPasswords = false;
+//     for (const passwords){
+//         if(passwords === userInput)
+//         {
+//             hasPasswords = true;
+//         break;
+//         }
+//     }
+// const message = hasPasswords
+// ? 'Добро пожаловать!'
+// : 'Неверный пароль, у вас осталось n попыток';
+//     // const asNumber = Number(userInput);
+//     // console.log("Yes");
+//     console.log(message);
+// } else {
+//     console.log("click cansel");
+// }
+// const numbers = [12, 15, 25, 37, 41];
+// min=12;
+// max=41;
+
+// const userInput = Number(prompt(`Введите цифру межу ${min} и ${max}`));
+
+// const isValid = userInput !== null && !Number.isNaN(userInput);
+// let hasNumber = false;
+
+
+// if (isValid){
+//   for (let i = 0, max = numbers.length; i < max; i += 1) {
+//   if (numbers[i] === userInput) {
+//     hasNumber = true;
+//     break;
+//   }
+// }
+// const message = hasNumber
+//   ? 'Поздравляем, вы угадали!'
+//   : 'Сожалеем, вы не угадали';
+
+// alert (message);
+
+// }
+
+// else {
+//   alert ('Было введено не число');
+// }
