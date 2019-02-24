@@ -29,7 +29,7 @@
 // console.log('bests', bests);
 
 
-const clients = ["Mongo", "Poly", "Ajax", "romeo", "Gringo"];
+// const clients = ["Mongo", "Poly", "Ajax", "romeo", "Gringo"];
 // clients.splice(0,3);
 // console.log(clients);
 
@@ -130,16 +130,16 @@ const clients = ["Mongo", "Poly", "Ajax", "romeo", "Gringo"];
   записывая его в переменную longestWord.
 */
 
-const string = "May the force be with you";
-let longestWord;
-const newArray = string.split(" ");
-longestWord =newArray[0];
-for (const value of newArray){
-    if (value.length > longestWord.length){
-        longestWord=value;
-    }
-}
-console.log(longestWord); // 'force'
+// const string = "May the force be with you";
+// let longestWord;
+// const newArray = string.split(" ");
+// longestWord =newArray[0];
+// for (const value of newArray){
+//     if (value.length > longestWord.length){
+//         longestWord=value;
+//     }
+// }
+// console.log(longestWord); // 'force'
 
 /*
   Напишите скрипт который:
@@ -215,24 +215,24 @@ console.log(longestWord); // 'force'
 // }
 // console.log('The sum is:' + sum);
 
-let userInput;
-const numbers = [];
-let total = 0;
-do {
-  userInput=Number(prompt('Введіть любе число'));
-  if (userInput !==0)
-  {
-    numbers.push(userInput);
-  }
-  console.log(userInput);
-  console.log(numbers);
-  }while(userInput);
-if (numbers.length !==0) {
-  for (const k of numbers){
-    total += k;
-  }
-}
-console.log('Общая сумма чисел равна: '+ total);
+// let userInput;
+// const numbers = [];
+// let total = 0;
+// do {
+//   userInput=Number(prompt('Введіть любе число'));
+//   if (userInput !==0)
+//   {
+//     numbers.push(userInput);
+//   }
+//   console.log(userInput);
+//   console.log(numbers);
+//   }while(userInput);
+// if (numbers.length !==0) {
+//   for (const k of numbers){
+//     total += k;
+//   }
+// }
+// console.log('Общая сумма чисел равна: '+ total);
   
 // if (userInput !==null)
 // {
@@ -282,3 +282,50 @@ console.log('Общая сумма чисел равна: '+ total);
 // else {
 //   alert ('Было введено не число');
 // }
+
+// const users = ["Mongo", "Poly", "Ajax", "romeo", "Gringo"];
+// let num=0;
+// do{
+//   if (users[num] === 'Mongo'){
+//     continue;
+//   }
+//   alert('hello ' + users[num])
+//   num +=1;
+// } while (num>=users.length)
+
+
+
+// // checkiandj:
+// let i;
+// let j;
+
+//   while (i < 4) {
+//     console.log(i);
+//     i += 1;
+//     checkj:
+//       while (j > 4) {
+//         console.log(j);
+//         j -= 1;
+//         if ((j % 2) != 0) {
+//           continue checkj;
+//         }
+//         console.log(j + " чётное.");
+//       }
+//       console.log("i = " + i);
+//       console.log("j = " + j);
+//   }
+
+const numbers = [12, 15, 25, 37, 41];
+const min = numbers[0];
+const max = numbers[4];
+
+const answer = Number(prompt('enter number'));
+if (Number.isNaN(answer)) {
+  alert ('not chuslo')
+} else {
+  if (numbers.includes(answer)){
+    alert('you won');
+  }else{
+    alert('game over')
+    }
+  }

@@ -26,7 +26,7 @@
 const passwords = ['qwerty', '111qwe', '123123', 'r4nd0mp4zzw0rd'];
 let attempts = 3;
 let userInput;
-
+let hasPasswords;
 while (userInput !== null && attempts !== 0)
  {    
 console.log(attempts);
@@ -35,24 +35,20 @@ attempts -= 1;
 if (userInput !==null)
 {
     
-let hasPasswords = false;
-for ( const value of passwords){
-        if(value === userInput)
-        {
-            hasPasswords = true;
-            break;
-        }
-    }
-const message = hasPasswords
-? 'Добро пожаловать!' 
-: 'Неверный пароль, у вас осталось' + attempts + 'попыток';
-  alert(message);
-} else {
-    console.log("click cansel");
+hasPasswords = passwords.includes(userInput);
+if(hasPasswords){ alert('Добро пожаловать!'); 
+break; 
+}
+const message = 'Неверный пароль, у вас осталось ' + attempts + ' попыток';
+alert(message);
+
+}  else {
+    alert("click cansel");
 }
  }
-alert('У вас закончились попытки, аккаунт заблокирован!')
-
+ if (!hasPasswords && attempts === 0) {
+     alert('У вас закончились попытки, аккаунт заблокирован!')
+ }
 
 
 

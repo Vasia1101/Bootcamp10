@@ -53,38 +53,37 @@
 // const taba = 6;
 // let hotel = "";
 
-// const requiredPlaces = prompt ('Введіть кількість місць');
-// if (Number.isInteger(+requiredPlaces)&& +requiredPlaces>0){
-//     if (+requiredPlaces <= sharm){
-//     hotel = "Sharm";
-//     }
-// else if (+requiredPlaces <= hurgada){
-//     hotel = "Hugarda";
-//     }
-//   else if (+requiredPlaces <= taba){
-//     hotel = "Taba";
-//     }
-//  if (hotel && confirm(`хочете залишитиcь в ${hotel}?`)) {
-//      alert (`welcome to ${hotel}`);
-//  } else if (!hotel) {
-//      alert('no mesT');
-//  } 
-//  else {
-//     alert('нам очень жаль');
-// } 
-// }
-// else if (!requiredPlaces) {
-//     alert('нам очень жаль');
-// }
+const requiredPlaces = prompt ('Введіть кількість місць');
+if (Number.isInteger(+requiredPlaces)&& +requiredPlaces>0){
+    if (+requiredPlaces <= sharm){
+    hotel = "Sharm";
+    }
+else if (+requiredPlaces <= hurgada){
+    hotel = "Hugarda";
+    }
+  else if (+requiredPlaces <= taba){
+    hotel = "Taba";
+    }
+ if (hotel && confirm(`хочете залишитиcь в ${hotel}?`)) {
+     alert (`welcome to ${hotel}`);
+ } else if (!hotel) {
+     alert('no mesT');
+ } 
+ else {
+    alert('нам очень жаль');
+} 
+}
+else if (!requiredPlaces) {
+    alert('нам очень жаль');
+}
 
-const arr =[];
-const clients =["Manog", "Poly", "Appel"];
-console.log(clients);
-clients[0]='chelsy';
-console.log(clients[0]);
+// const arr =[];
+// const clients =["Manog", "Poly", "Appel"];
+// console.log(clients);
+// clients[0]='chelsy';
+// console.log(clients[0]);
 
 
-'use strict'
 // JS чутливий до регістру
 //
 //
@@ -428,29 +427,308 @@ console.log(clients[0]);
     4 - "Каталог отелей ****"
     5 - "Каталог лучших отелей"
 */
-const promptValue = prompt ("Type number from 1-5");
+// const promptValue = prompt ("Type number from 1-5");
 
-if (Number.isInteger(+promptValue) && (promptValue > 0 && promptValue <= 5) ) {
-  switch(+promptValue) {
-    case 1 :
-    alert ("Каталог хостелов")
-    break;
-    case 2 :
-      alert ("Каталог бюджетных отелей")
-      break;
-    case 3 :
-      alert ("Каталог отелей ***")
-      break;
-    case 4 :
-      alert ("Каталог отелей ****")
-      break;
-    case 5 :
-      alert ("Каталог лучших отелей")
-      break;
-  }
-} else if(promptValue === null) {
-  alert ("очень жаль, приходите еще!")
+// if (Number.isInteger(+promptValue) && (promptValue > 0 && promptValue <= 5) ) {
+//   switch(+promptValue) {
+//     case 1 :
+//     alert ("Каталог хостелов")
+//     break;
+//     case 2 :
+//       alert ("Каталог бюджетных отелей")
+//       break;
+//     case 3 :
+//       alert ("Каталог отелей ***")
+//       break;
+//     case 4 :
+//       alert ("Каталог отелей ****")
+//       break;
+//     case 5 :
+//       alert ("Каталог лучших отелей")
+//       break;
+//   }
+// } else if(promptValue === null) {
+//   alert ("очень жаль, приходите еще!")
 
-} else {
-  alert ("Неверный ввод, возможные варианты 1-5!")
+// } else {
+//   alert ("Неверный ввод, возможные варианты 1-5!")
+// }
+
+// let firstNumber;
+// const secondNumber = 15;
+// firstNumber=5;
+// console.log('Znacchenj',firstNumber);
+// let declaredVariable;
+// console.log(declaredVariable);
+// // console.log(undeclaedVariable);
+// let age = 20;
+// let number = 5.8;
+// let name = 'Mango';
+// let hobby = "Codding";
+// let isAuthenticated = true;
+// let canMerge = false;
+// let hasChildren = true;
+// let appeles = null;
+// null == 0;//false
+// undefined == "";//false
+// null == false;//false
+// null == undefined;//true
+// // const foo;
+// const array =[1,2,3];
+// // const foo = arry.foo; // свойство foo не существует, возвращается undefined
+// const item = array[5]; // в массиве нет элемента 5, возвращается undefined
+// const value = (function(){})(); // возвращает undefined
+// function isUndefined(obj){
+//   return obj === void 0;
+//   }; //void нельзя переопределить, и он всегда возвращает undefined
+//   'undefined' in window;
+//   Object.prototype.toString.call(null);//[object Null] 
+//   Object.prototype.toString.call(undefined);
+
+// let a;
+// console.log(typeof a);
+// let b = null;
+// console.log(typeof null);
+// let c = 5;
+// console.log(typeof c);
+// let d=5.3;
+// console.log(typeof d);
+// let message = "get up";
+// console.log(typeof message);
+// let isActive = false;
+// console.log(typeof isActive);
+// let isHappy = true;
+// console.log(typeof isHappy);
+
+// const isComing = confirm ('please enter something');
+// console.log(isComing);
+// const hotelName = prompt ('when hotel?');
+// console.log(hotelName);
+
+// const number = prompt("enter number:");
+// console.log(typeof number);
+// console.log(number);
+// const x = 10;
+// const y = 5;
+// let result;
+
+// result = x + y;
+// console.log(result);
+
+// result = x-y;
+// console.log(result);
+
+// result = x*y;
+// console.log(result);
+
+// result = x/y;
+// console.log(result);
+
+// result = x%y;
+// console.log(result);
+// console.log(9%4);
+// console.log(13%5);
+
+// const x = 5;
+// const y = 10;
+// const z = 5;
+// let result;
+
+// result = x>y;
+// console.log('x>y', result);
+//  result = x<y;
+//  console.log('x<y', result);
+//  result = x<z;
+//  console.log('x<z', result);
+//  result = x<=z;
+//  console.log('x<=z', result);
+//  result = x === y;
+//  console.log('x===y', result);
+//  result = x===z;
+//  console.log('x===z', result);
+//  result = x!==y;
+//  console.log('x!==y', result);
+//  result = x!==z;
+//  console.log('x !==z',  result);
+
+//  console.log(0b001);
+//  console.log(0b010);
+// console.log(0b011);
+// console.log(0b100);
+// parseInt('01');
+// console.log('r');
+// var ourDecimal = 5.7;
+
+// // Only change code below this line
+
+// Number.parseFloat(ourDecimal);
+// console.log(ourDecimal);
+
+
+// let valueA = '5';
+// let valueAsNumber = +valueA;
+// let typeOfValueAsNumber = typeof valueAsNumber;
+// console.log(typeOfValueAsNumber);
+// console.log(valueAsNumber);
+// valueAsNumber = Number(valueA);
+// typeOfValueAsNumber = typeof valueAsNumber;
+// console.log(typeOfValueAsNumber);
+// console.log(valueAsNumber);
+
+// let valueB = 'random string';
+// valueAsNumber = +valueB;
+// typeOfValueAsNumber = typeof valueAsNumber;
+// console.log(typeOfValueAsNumber);
+// console.log(valueAsNumber);
+
+// valueAsNumber = Number(valueB);
+// typeOfValueAsNumber = typeof valueAsNumber;
+// console.log(typeOfValueAsNumber);
+// console.log(valueAsNumber);
+// console.log( Number.perseInt('5px') );
+// console.log( Number.parseInt('5px') );
+// console.log( Number.parseInt('12qwe74') );
+// console.log( Number.parseInt('12.46qwe79'));
+// console.log( Number.parseInt('qweqwe'));
+
+// console.log( Number.parseFloat('5px'));
+// console.log( Number.parseFloat('12qwe74'));
+// console.log( Number.parseFloat('12.46qwe79...'));
+// console.log( Number.parseFloat('qweqwe'));
+// console.log( Number.parseFloat('qweqwer12'));
+
+// const validNumber = Number('51');//51
+// console.log( Number.isNaN(validNumber));
+
+// const invalidNumber = Number('qweqwe');//NaN
+// console.log( Number.isNaN(invalidNumber));
+
+// console.log(0.1+0.2 === 0.3);//false
+// console.log(0.1 + 0.2);//0.30000000000000004
+// console.log((0.1*100+0.2*100)/100 === 0.3);
+
+// const result = 0.1+0.2;
+// console.log( +result.toFixed(10));
+
+// console.log(Math.max(1,2,3));
+
+// console.log(Math.max(1, 3, 2));
+// // expected output: 3
+
+// console.log(Math.max(-1, -3, -2));
+// // expected output: -1
+
+// var array1 = [1, 3, 2];
+
+// console.log(Math.max(...array1));
+// // expected output: 3
+
+// const state='Mango ' + 'is' + 'happy';
+// console.log(state);
+
+// let result;
+// result = 5+'5'+5;
+// console.log(result);
+// console.log(typeof result);
+
+// const message = 'Welcome to Bahamas';
+// console.log(message.length);
+// console.log('There is nothing impossible to him who will try'.length);
+// console.log(message.indexOf('to'));
+// console.log(message.indexOf('hello'));
+// console.log(message.toLowerCase());
+// console.log(message.toUpperCase());
+// console.log(message.includes('welcome'));
+// console.log(message.includes('Welcome'));
+//  const name = 'Mango';
+//  const age =  2;
+//  const mood = 'happy';
+//  const message = 'My name is ' + name + ", I'm " + age + ' years old and very ' + mood +'.';
+//  console.log(message);
+//  const sameMessage = `My name is${name}, I'm ${age}, years old and verry ${mood}.`
+//  console.log(sameMessage);
+//  console.log(`Summa chisel is ${2+2}`);
+
+// //  let isActive = false;
+// //  alert(isActive);
+
+// //  console.log( String(false) === "false");
+//  console.log( true +'text');
+//  console.log('100'+ undefined);
+
+//  let a = +'100';
+//  let b = Number('100');
+//  console.log(a);
+ 
+//  console.log(b);
+
+//  console.log(+"100text");
+//  console.log(+undefined);
+//  console.log(+null);
+//  console.log(+true);
+//  console.log(+false);
+//  console.log('1' == true);
+//  console.log('1' === true);
+
+ const a = 20;
+//  const result = a < 30 && a > 10;
+//  console.log(result);
+
+
+const result = a<30||a>30;
+console.log(result);
+
+console.log(!true);
+console.log(!false);
+ console.log(1&&2);
+ console.log(false&&true);
+ console.log(''&&"hello");
+
+//  let season;
+//  const mouthName = 'Junuary';
+//  if (mouthName === 'june'){
+//    season = "summer";
+//  };
+//  console.log(season);
+//  let season = "winter";
+// const monthName = "June";
+
+// if (monthName === "June")
+//   season = "summer";
+
+
+// let season;
+// const mouthname = 'Junuary';
+// if (mouthname === 'June'){
+//   season ='summer'
+// } else if (mouthname === 'may' ){
+//   season = "spring";
+// } else {
+//   season = 'winter';
+// }
+// let mouthName = "July";
+// const season = mouthName === 'June' ? 'summer':'winter';
+// console.log(season); // summer
+
+const mouthName = "May";
+let season;
+
+switch (mouthName) {
+  case "June":
+  season = "summer";
+  break;
+  case "May":
+  season = "spring";
+  break;
+  case "September":
+  season = "autum";
+  break;
+  default:
+  season = "winter";
 }
+console.log(null || "false" && "правая часть"
+);
+
+
+
+
