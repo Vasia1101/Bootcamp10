@@ -1,4 +1,4 @@
-// add (1,2,3);
+﻿// add (1,2,3);
 // print('text');
 // function add(a,b,c){
 //     return a+b+c;
@@ -213,7 +213,7 @@ function getPx(str){
   else{
     return null
   }
-}
+};
 
 console.log( getPx("10px") === 10 ); // должно быть:  true
 console.log( getPx("10.5") === 10.5 ); // должно быть:  true
@@ -304,16 +304,48 @@ console.log(
   ни с одним из числовых аргументов.
 */
 
+const filterFromArray = (...arr) =>{
+consr newArr = [0];
+arr.shift();
+const newArr2 = arr;
+for (const number of newArr2)
+if (newArr.includes(number)){
+newArr.splice(newArr.indexOf(number),1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const filterFromArray = (...arr) => {
 //   const newArr = arr[0];
 //   arr.shift();
 //   const newArr2 = arr;
 //   for (const number of newArr2){
-//     if (newArr.includes(number)){
+//     if (!newArr.includes(number)){
 //       newArr.splice(newArr.indexOf(number), 1);
 //     }
 //   }
-  
+  const newArr = [0];
+arr.shift();
+const newArr2 = arr;
+for (const number of newArr2){
+if  (newArr.includes(number)){
+newArr.splice.indexOf(number), 1);
+}
+}
+
 /*  
   Есть массив уникальных чисел uniqueNumbers.
   
@@ -379,3 +411,41 @@ console.log(
 console.log(
   findLargestNumber([31, 128, 14, 74])
 ); // вернет 128
+
+
+
+
+// ----------------------------------------------------------------------------------------------------//
+/*  
+  Есть массив уникальных чисел uniqueNumbers.
+  
+  Написать функцию, addUniqueNumbers(...), 
+  которая получает произвольное кол-во чисел как аргументы, 
+  и добавляет в массив uniqueNumbers только уникальные,
+  а те которые в массиве уже есть игнорирует.
+*/
+
+const uniqueNumbers  = [2, 1, 4, 9];
+const addUniqueNumbers = function(){
+  let arr = arguments;
+  for (let index of arr)
+    if (!uniqueNumbers.includes(index)){
+      uniqueNumbers.push(index)
+  }
+}
+// Вызовы функции для проверки
+addUniqueNumbers(1, 2, 3);
+console.log(
+  uniqueNumbers
+); // [2, 1, 4, 9, 3]
+
+addUniqueNumbers(12, 2, 3, 19);
+console.log(
+  uniqueNumbers
+); // [2, 1, 4, 9, 3, 12, 19]
+
+addUniqueNumbers(4, 5, 12, 3, 1, 2, 8);
+console.log(
+  uniqueNumbers
+); // [2, 1, 4, 9, 3, 12, 19, 5, 8]
+
