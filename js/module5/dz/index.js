@@ -194,36 +194,9 @@ console.log(getUsersByFriend(users, 'Goldie Gentry')); // [ 'Elma Head', 'Sheree
 // // /**
 // // * Массив имен (поле name) людей, отсортированных в зависимости от количества их друзей (поле friends)
 // // */
-// const getUserNamesSortedByFriends = arr => arr.reduce((acc,x) => x.friends ? acc.concat(x.friends): acc, []);
-// const friends = getUserNamesSortedByFriends(users);
-// const getFriendsNumber = (acc, friend) => {
-//   if (!acc.hasOwnProperty(friend)){
-//     acc[friend] = 0;
-//   }
-//   acc[friend] += 1;
-//   return acc;
-// };
-// const countFriends = arr => arr.reduce(getFriendsNumber, {});
-// const friendCount = countFriends(friends);
-// console.log(friendCount);
-// const getUserNamesSortedByFriendsCount = (a, b) => a.friends - b.friends;
-// console.log(friendCount(users.sort())); 
+const getUserNamesSortedByFriendsCount = arr => arr.sort((a,b) => a.friends.length - b.friends.length).map(user => user.name);
 
-
-/**
-* Массив имен (поле name) людей, отсортированных в зависимости от количества их друзей (поле friends)
-*/
-
-// const getUserNamesSortedByFriendsCount = arr=> arr.sort(function (a, b){
-//   return a.users['name'] > b.users['name'];
-// });
-const getUserNamesSortedByFriendsCount = (acc, user)=> {
-  acc[user.name] = user.friends;
-  return acc;
-};
 console.log(getUserNamesSortedByFriendsCount(users)); 
 // [ 'Moore Hensley', 'Sharlene Bush', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony', 'Ross Vazquez' ]
-
-// // [ 'Moore Hensley', 'Sharlene Bush', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony', 'Ross Vazquez' ]
 
 
