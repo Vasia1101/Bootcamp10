@@ -1,0 +1,19 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+
+}
+.fullview {
+    display: flex;
+    padding: 10px;
+}
+ul, li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+li {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
