@@ -1,0 +1,169 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   padding: 0 1rem;
+}
+
+/* ========= serials Nata Chasovskikh ============ */
+
+.wrapper {
+   margin: 20px auto;
+}
+
+.categoriasSerialsPopular,
+.categoriasSerialsTopRated,
+.categoriasSerialsOnTheAir {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-content: space-around;
+}
+
+.pictureSerials1,
+.pictureSerials2,
+.pictureSerials3,
+.pictureSerials4,
+.pictureSerials5,
+.pictureSerials6,
+.pictureSerials7,
+.pictureSerials8,
+.pictureSerials9,
+.pictureSerials10,
+.pictureSerials11,
+.pictureSerials12 {
+   width: 48%;
+   height: 55vh;
+   background: linear-gradient(to top, rgba(0, 0, 0, 0.726), rgba(128, 128, 128, 0)), url(../images/men.png);
+   background-size: cover;
+   position: relative;
+   margin-bottom: 10px;
+}
+
+.pictureSerials3,
+.pictureSerials4,
+.pictureSerials7,
+.pictureSerials8,
+.pictureSerials11,
+.pictureSerials12 {
+   display: none;
+}
+
+.image {
+   width: 100%;
+}
+
+.textSerialsPopular,
+.textSerialsTopRated,
+.textSerialsOnTheAir {
+   color: white;
+   font-family: Roboto, sans-serif;
+   font-weight: 500;
+   position: absolute;
+   bottom: 26px;
+   left: 22px;
+   font-size: 20px;
+}
+
+.iconBell {
+   width: 20px;
+   height: 20px;
+   position: absolute;
+   top: 24px;
+   right: 50px;
+   fill: white;
+}
+
+.iconStar {
+   width: 20px;
+   height: 20px;
+   position: absolute;
+   top: 24px;
+   right: 20px;
+   fill: white;
+}
+
+/* #bell {
+   width: 20px;
+   height: 20px;
+}
+
+#star {
+   top: 20px;
+   right: 60px;
+} */
+
+.iconBell:hover {
+   fill: orange;
+}
+
+.iconStar:hover {
+   fill: orange;
+}
+
+.headline {
+   width: 100%;
+   font-family: Roboto-Medium, sans-serif;
+   font-size: 20px;
+   opacity: 0.7;
+   margin: 20px 0;
+   font-weight: 700;
+}
+
+@media (min-width: 768px) {
+
+   .categoriasSerialsPopular,
+   .categoriasSerialsTopRated,
+   .categoriasSerialsOnTheAir {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content: space-around;
+   }
+
+   .pictureSerials3,
+   .pictureSerials4,
+   .pictureSerials7,
+   .pictureSerials8,
+   .pictureSerials11,
+   .pictureSerials12 {
+      display: block;
+   }
+}
+
+.headline {
+   width: 100%;
+   font-size: 24px;
+}
+
+
+@media (min-width: 1024px) {
+
+   .headline {
+      font-size: 30px;
+   }
+
+   .textSerialsPopular,
+   .textSerialsTopRated,
+   .textSerialsOnTheAir {
+      font-size: 27px;
+   }
+
+   .pictureSerials1,
+   .pictureSerials2,
+   .pictureSerials3,
+   .pictureSerials4,
+   .pictureSerials5,
+   .pictureSerials6,
+   .pictureSerials7,
+   .pictureSerials8,
+   .pictureSerials9,
+   .pictureSerials10,
+   .pictureSerials11,
+   .pictureSerials12 {
+      width: 24%;
+   }
+}

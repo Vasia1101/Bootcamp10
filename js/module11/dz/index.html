@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dz11</title>
+</head>
+<body>
+        <form class="form js-form">
+                <section>
+                  <h2>Screen size</h2>
+                  <ul>
+                    <li><label><input type="checkbox" name="size" value="13"> 13"</label></li>
+                    <li><label><input type="checkbox" name="size" value="15"> 15"</label></li>
+                    <li><label><input type="checkbox" name="size" value="17"> 17"</label></li>
+                  </ul>
+                </section>
+                <section>
+                  <h2>Color</h2>
+                  <ul>
+                    <li><label><input type="checkbox" name="color" value="white"> white</label></li>
+                    <li><label><input type="checkbox" name="color" value="gray"> gray</label></li>
+                    <li><label><input type="checkbox" name="color" value="black"> black</label></li>
+                  </ul>
+                </section>
+                <section>
+                  <h2>Release date</h2>
+                  <ul>
+                    <li><label><input type="checkbox" name="release_date" value="2015"> 2015</label></li>
+                    <li><label><input type="checkbox" name="release_date" value="2016"> 2016</label></li>
+                    <li><label><input type="checkbox" name="release_date" value="2017"> 2017</label></li>
+                  </ul>
+                </section>
+                <button id="sub" type="submit">Filter</button>
+                <button id="res" type="reset">Clear</button>
+              </form>
+              <!-- Поля объекта для отображения в карточке: name, img, descr, color, price, release_date. -->
+              <div id="container"></div>
+              <script type="hbs/template" id="gallery-item">
+                              <div class="menu">
+                  <h3 class="menu-name">{{name}}</h3>
+                  <ul class="menu-list">
+                     
+                    <li class="menu-img"><img src={{img}} alt="notebook"></li>
+                    <li class="descr">{{descr}}</li>
+                    <li class="color">{{color}}</li>
+                   <li class="price">{{price}}</li>
+                   <li class="release_date">{{release_date}}</li>
+                   
+                   </ul>
+                </div>
+               
+            </script>
+    <!-- dz -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <!-- <script type="hbs/template" id="product-item">
+        <li class="item">
+                <p class="name"><strong>Name:{{name}}</strong> </p>
+                <p class="img"><img src={{quantity}}></p>
+              </li>
+      </script> -->
+    <script src="index.js"></script>
+</body>
+</html>

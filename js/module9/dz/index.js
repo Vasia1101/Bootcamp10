@@ -126,60 +126,116 @@
 //   // let listener = document.querySelector(".js-start");
 //   // listener.addEventListener('click', test2.startTime);
 //   test2.startTimer;
-class Stopwatch {
-constructor(parentDiv) {
-  this.parentDiv = parentDiv;
-  this.startTime = null;
-  this.deltaTime = null;
-  this.id = null;
-  this.stopwatch = document.createElement('div');
-  this.clockface = document.createElement('p');
-  this.btnStart = document.createElement('button');
-  this.btnLap = document.createElement('button');
-  this.btnReset = document.createElement('button');
-  this.list = document.createElement('ul');
-  this.listItem = document.createElement('li');
+// class Stopwatch {
+// constructor(parentDiv) {
+//   this.parentDiv = parentDiv;
+//   this.startTime = null;
+//   this.deltaTime = null;
+//   this.id = null;
+//   this.stopwatch = document.createElement('div');
+//   this.clockface = document.createElement('p');
+//   this.btnStart = document.createElement('button');
+//   this.btnLap = document.createElement('button');
+//   this.btnReset = document.createElement('button');
+//   this.list = document.createElement('ul');
+//   this.listItem = document.createElement('li');
 
-  this.stopwatch.append(this.clockface, this.btnStart, this.btnLap, this.btnReset);
-  this.parentDiv.append(this.stopwatch, this.list);
+//   this.stopwatch.append(this.clockface, this.btnStart, this.btnLap, this.btnReset);
+//   this.parentDiv.append(this.stopwatch, this.list);
 
-  this.addListeners();
-}
+//   this.addListeners();
+// }
 
-addListeners() {
-  this.stopwatch.classList.add('stopwatch');
+// addListeners() {
+//   this.stopwatch.classList.add('stopwatch');
 
-  this.clockface.classList.add('js-time');
-  this.clockface.textContent = '00:00.0';
+//   this.clockface.classList.add('js-time');
+//   this.clockface.textContent = '00:00.0';
 
-  this.btnStart.classList.add('js-start');
-  this.btnStart.textContent = 'Start';
+//   this.btnStart.classList.add('js-start');
+//   this.btnStart.textContent = 'Start';
 
-  this.btnLap.classList.add('js-lap');
-  this.btnLap.textContent = 'Lap';
+//   this.btnLap.classList.add('js-lap');
+//   this.btnLap.textContent = 'Lap';
 
-  this.btnReset.classList.add('js-reset');
-  this.btnReset.textContent = 'Reset';
+//   this.btnReset.classList.add('js-reset');
+//   this.btnReset.textContent = 'Reset';
 
-  this.list.classList.add('js-laps');
-  this.listItem.classList.add('js-list-item')
+//   this.list.classList.add('js-laps');
+//   this.listItem.classList.add('js-list-item')
 
-  this.btnStart.addEventListener('click', this.onStart.bind(this));
-  this.btnLap.addEventListener('click', this.onLap.bind(this));
-  this.btnReset.addEventListener('click', this.onReset.bind(this));
-}
-onStart({target}) {
-  if(target.textContent === 'Start') {
-      timeObj.startTime = Date.now();
-      target.textContent = 'Pause';
+//   this.btnStart.addEventListener('click', this.onStart.bind(this));
+//   this.btnLap.addEventListener('click', this.onLap.bind(this));
+//   this.btnReset.addEventListener('click', this.onReset.bind(this));
+// }
+// onStart({target}) {
+//   if(target.textContent === 'Start') {
+//       timeObj.startTime = Date.now();
+//       target.textContent = 'Pause';
 
-      timeObj.id = setInterval(function() {
-          timeObj.deltaTime = Date.now() - timeObj.startTime;
-          changeClockface(clockface, timeObj.deltaTime);
-      }, 100);
+//       timeObj.id = setInterval(function() {
+//           timeObj.deltaTime = Date.now() - timeObj.startTime;
+//           changeClockface(clockface, timeObj.deltaTime);
+//       }, 100);
      
-  } else if (target.textContent === 'Pause') {
-    elem.innerHTML = elem.dataset.action === 'true' ? "Pause" : "Continue";
-  } else if(target.textContent === 'Continue'){elem.setAttribute("data-action", true);}
-}
-}
+//   } else if (target.textContent === 'Pause') {
+//     elem.innerHTML = elem.dataset.action === 'true' ? "Pause" : "Continue";
+//   } else if(target.textContent === 'Continue'){elem.setAttribute("data-action", true);}
+// }
+// }
+
+  // // let test = document.querySelector('.timer');
+  // let test2 = new Stopwatch(parentDiv);
+
+  let p = document.querySelector('p');
+  let start = document.querySelector('.js-start');
+  let lap = document.querySelector('.js-take-lap');
+  let reset = document.querySelector('.js-reset');
+   let addLap = document.querySelector('.js-laps');
+   let t = -1;
+   reset.disabled = true;
+
+   let milisecond = 0;
+   let second = 0;
+   let minute = 0;
+
+   function add () {
+     if (t == -1) {
+       t = setInterval(function (){
+        start.textContent = 'Pause';
+        reset.disabled = false;
+    milisecond ++;
+     if (milisecond >= 100){
+      milisecond = 0;
+      second ++;
+      if (second >= 60){
+        second = 0;
+        minute++
+      }
+     }
+     p.textContent = (minute ? (minute > 9 ? minute : "0" + minute):"00") +":"+(second ? (second > 9 ? second: "0" + second):"00")+"."+ milisecond;},
+     
+   100);}
+  else {clearInterval(t);
+    t = -1;
+    start.textContent = 'Continue';
+    reset.disabled = false;
+  }}
+  function insertLap (){
+    h = document.createElement('li')
+    h.textContent = p.textContent;
+    addLap.appendChild(h)
+  }
+    function reserTimer () {
+      p.textContent = '00:00.0';
+      milisecond = 0;
+   second = 0;
+   minute = 0;
+   clearTimeout(t);
+   reset.disabled = true;
+   start.textContent = 'Start';
+   addLap.textContent = null;
+    }
+  start.addEventListener('click', add);
+  reset.addEventListener('click', reserTimer);
+  lap.addEventListener('click', insertLap);

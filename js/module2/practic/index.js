@@ -254,34 +254,34 @@
 // } else {
 //     console.log("click cansel");
 // }
-// const numbers = [12, 15, 25, 37, 41];
-// min=12;
-// max=41;
+const numbers = [ 12, 15, 25, 37, 41];
+let min=12;
+let max=41;
 
-// const userInput = Number(prompt(`Введите цифру межу ${min} и ${max}`));
+const userInput = Number(prompt(`Введите цифру межу ${min} и ${max}`));
 
-// const isValid = userInput !== null && !Number.isNaN(userInput);
-// let hasNumber = false;
+const isValid = userInput !== null && !Number.isNaN(userInput);
+let hasNumber = false;
 
 
-// if (isValid){
-//   for (let i = 0, max = numbers.length; i < max; i += 1) {
-//   if (numbers[i] === userInput) {
-//     hasNumber = true;
-//     break;
-//   }
-// }
-// const message = hasNumber
-//   ? 'Поздравляем, вы угадали!'
-//   : 'Сожалеем, вы не угадали';
+if (isValid){
+  for (let i = 0, max = numbers.length; i < max; i += 1) {
+  if (numbers[i] === userInput) {
+    hasNumber = true;
+    break;
+  }
+}
+const message = hasNumber
+  ? 'Поздравляем, вы угадали!'
+  : 'Сожалеем, вы не угадали';
 
-// alert (message);
+alert (message);
 
-// }
+}
 
-// else {
-//   alert ('Было введено не число');
-// }
+else {
+  alert ('Было введено не число');
+}
 
 // const users = ["Mongo", "Poly", "Ajax", "romeo", "Gringo"];
 // let num=0;
@@ -702,12 +702,14 @@
 // console.log(arrNew);
 // ------------------------------ 10 -----------------------------------//
 // Переместить элемент массива из одной позиции в другую - замените два соседних элемента в массиве.
-let arr = ["php", "php", "css", "css", "script", "script", "html", "html", "java"];
-for (let k = 0; k < arr.length; k++){
+// let arr = ["php", "css", "css", "script", "html", "java"];
+// arr.map(i => console.log(`${arr.indexOf(i)+1} - ${i}`));
 
-  // arr.splice(k, 2, arr[k + 1], arr[k])
-}
-console.log(arr);
+// for (let k = 0; k < arr.length; k++){
+
+//   // arr.splice(k, 2, arr[k + 1], arr[k])
+// }
+// console.log(arr);
 
 
 
@@ -716,17 +718,17 @@ console.log(arr);
 
 // console.log(arr.indexOf(i)+":"+i);
 // }
-const numbers = [12, 15, 25, 37, 41];
+// const numbers = [12, 15, 25, 37, 41];
 
-let num;
-do{ num = Number( prompt ( `Enter number from ${numbers[0]} till ${numbers[numbers.length-1]}`));
-if( Number.isNaN(num)) {
-  alert('Это не число-введите число')
-} 
-else if(numbers.includes(num)){
-  alert('Поздравляем, Вы угадали!')
-} else if(!numbers.includes(num) || num !== 0 ){
-  alert('Сожалеем, Вы не угадали!')
-}
-console.log(num)
-} while (num !== 0);
+// let num;
+// do{ num = Number( prompt ( `Enter number from ${numbers[0]} till ${numbers[numbers.length-1]}`));
+// if( Number.isNaN(num)) {
+//   alert('Это не число-введите число')
+// } 
+// else if(numbers.includes(num)){
+//   alert('Поздравляем, Вы угадали!')
+// } else if(!numbers.includes(num) || num !== 0 ){
+//   alert('Сожалеем, Вы не угадали!')
+// }
+// console.log(num)
+// } while (num !== 0);

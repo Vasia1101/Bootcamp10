@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+        <!-- <div id="menu-container"></div>
+
+        <template id="menu-template">
+          <div class="menu">
+            <h3 class="menu-title">{{title}}</h3>
+            <ul class="menu-list">
+              {{#each items}}
+                <li class="menu-item">{{this}}</li>
+              {{/each}}
+            </ul>
+          </div>
+        </template> -->
+
+
+
+        <!-- Dop 11 - 1 -->
+        <!-- Разметка элемента списка
+
+<li class="item">
+  <p class="name"><strong>Name:</strong> </p>
+  <p class="quantity"><strong>Quantity:</strong> </p>
+</li>
+ -->
+
+<!-- Контейнер в который рендерить -->
+<!-- <ul class="products"></ul> -->
+
+<!-- Dop 11 - 2 -->
+<!-- Разметка поста 
+
+<article class="post">
+  <h2 class="title"></h2>
+  <p class="text"></p>
+  <span class="fav-icon"></span>
+</article>
+-->
+
+<!-- Контейнер в который рендерить -->
+<section class="posts"></section>
+
+
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    
+    <!-- Dop 11 - 1 -->
+    <!-- <script type="hbs/template" id="product-item">
+        <li class="item">
+                <p class="name"><strong>Name:{{name}}</strong> </p>
+                <p class="quantity"><strong>Quantity:{{quantity}}</strong></p>
+              </li>
+      </script> -->
+
+      <!-- Dop 11 - 2 -->
+      <script type="hbs/template" id="product-item">
+        <article class="post">
+                <h2 class="title">{{title}}</h2>
+                <p class="text">{{text}}</p>
+                {{#if favourite}}
+                <span class="fav-icon"></span>
+            {{else}}
+            {{/if}}
+              </article>
+      </script>
+    <script src="index.js"></script>
+</body>
+</html>
