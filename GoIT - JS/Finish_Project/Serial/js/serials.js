@@ -1,4 +1,3 @@
-"use strict";
 // function menu
 document.querySelector('main').addEventListener('click', () => {menuBtn.className = menuIconClosed;
   menuContainer.className = menuContClosed;});
@@ -18,7 +17,7 @@ menuBtn.addEventListener('click', function() {
     menuBtn.className = menuIconClosed;
     menuContainer.className = menuContClosed;
   }
-  })
+  });
 
 
 

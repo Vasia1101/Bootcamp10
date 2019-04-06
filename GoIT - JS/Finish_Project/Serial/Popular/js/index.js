@@ -16,7 +16,11 @@ menuBtn.addEventListener('click', function() {
     menuBtn.className = menuIconClosed;
     menuContainer.className = menuContClosed;
   }
-})
+}) ;
+document.querySelector('main').addEventListener('click', () => {menuBtn.className = menuIconClosed;
+   menuContainer.className = menuContClosed;});
+
+   // ============================= Kate
 
 let arrowLinkLeft = document.querySelector('[data-action=left]');
 let arrowLinkRight = document.querySelector('[data-action=right]');

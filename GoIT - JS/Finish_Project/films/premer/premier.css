@@ -691,3 +691,18 @@ color: #372c48;
         text-align: right;
     }
 }
+
+/* kate page */
+.pages {
+    margin: auto;
+    max-width: 280px;
+
+}
+.pagesFlex {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.pagesLink, .arrowLinkLeft, .arrowLinkRight  {
+    text-decoration: none;
+}

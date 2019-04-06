@@ -17,7 +17,8 @@ menuBtn.addEventListener('click', function () {
       menuContainer.className = menuContClosed;
    }
 });
-
+document.querySelector('main').addEventListener('click', () => {menuBtn.className = menuIconClosed;
+   menuContainer.className = menuContClosed;});
 
 // --------------------------- New Kate -------------------------//
 let arrowLinkLeft = document.querySelector('[data-action=left]');

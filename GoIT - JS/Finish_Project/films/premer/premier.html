@@ -148,6 +148,7 @@
 </header>
     <!-- //-----------------card  -->
 <!-- Jarick -->
+<main>
 <section class="sort">
     <div class="content-sort__menu">
       <ul class="content-sort-menu__ul">
@@ -158,31 +159,31 @@
     </div>
     <div class="sort_menu">
       <ul class="sort-menu__ul">
-        <li class="sort-menu-ul__li__global">Подкатегория</li>
+        <li class="sort-menu-ul__li__global">Подкатегория: Премьеры</li>
         <li class="sort-menu-ul__li">по назв.
-          <div class="sort-menu-ul-li__arrow">
-            <img class="img_arrow__up" src="./images/arrow_up.png">
-            <img class="img_arrow__down" src="./images/arrow_down.png">
-          </div>
-        </li>
-        <li class="sort-menu-ul__li__768">по названию
             <div class="sort-menu-ul-li__arrow">
-                <img class="img_arrow__up" src="./images/arrow_up.png">
-                <img class="img_arrow__down" src="./images/arrow_down.png">
+              <img class="img_arrow__up JS-UP-SORT-NAME" src="./images/arrow_up.png">
+              <img class="img_arrow__down JS-DOWN-SORT-NAME" src="./images/arrow_down.png">
             </div>
           </li>
-        <li class="sort-menu-ul__li">по дате
-          <div class="sort-menu-ul-li__arrow">
-            <img class="img_arrow__up" src="./images/arrow_up.png">
-            <img class="img_arrow__down" src="./images/arrow_down.png">
-          </div>
-        </li>
-        <li class="sort-menu-ul__li__768">по дате
+          <li class="sort-menu-ul__li__768">по названию
+              <div class="sort-menu-ul-li__arrow">
+                <img class="img_arrow__up js__up JS-UP-SORT-NAME" src="./images/arrow_up.png">
+                <img class="img_arrow__down JS-DOWN-SORT-NAME" src="./images/arrow_down.png">
+              </div>
+            </li>
+          <li class="sort-menu-ul__li">по дате
             <div class="sort-menu-ul-li__arrow">
-                <img class="img_arrow__up" src="./images/arrow_up.png">
-                <img class="img_arrow__down" src="./images/arrow_down.png">
+              <img class="img_arrow__up JS-UP-SORT-DATE" src="./images/arrow_up.png">
+              <img class="img_arrow__down" src="./images/arrow_down.png">
             </div>
           </li>
+          <li class="sort-menu-ul__li__768">по дате
+              <div class="sort-menu-ul-li__arrow">
+                <img class="img_arrow__up JS-UP-SORT-DATE" src="./images/arrow_up.png">
+                <img class="img_arrow__down JS-DOWN-SORT-DATE" src="./images/arrow_down.png">
+              </div>
+            </li>
       </ul>
     </div>
   </section>
@@ -232,16 +233,49 @@
         <!-- <hr> --> 
         <!-- <div class="categoriasUpcoming"></div> -->
     </div>
+    <section class="pages">
 
-
+        <ul class="pagesFlex">
+            <li><a href="" data-action='left' class="arrowLinkLeft"><svg xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 129 129"
+                        enable-background="new 0 0 129 129" width="20px" height="20px">
+                        <g>
+                            <g>
+                                <path
+                                    d="m88.6,121.3c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-51-51 51-51c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8,0l-54,53.9c-1.6,1.6-1.6,4.2 0,5.8l54,53.9z"
+                                    data-original="#000000" class="active-path" data-old_color="#8dcac5"
+                                    fill="#8dcac5" />
+                            </g>
+                        </g>
+                    </svg></a></li>
+            <li><a href="" class="pagesLink">1</a></li>
+            <li><a href="" class="pagesLink">2</a></li>
+            <li><a href="" class="pagesLink">3</a></li>
+            <li><a href="" class="pagesLink">4</a></li>
+            <li><a href="" class="pagesLink">5</a></li>
+            <li><a href="" data-action='right' class="arrowLinkRight"><svg xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 129 129"
+                        enable-background="new 0 0 129 129" width="20px" height="20px" class="">
+                        <g>
+                            <g>
+                                <path
+                                    d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"
+                                    data-original="#000000" class="active-path" data-old_color="#8dcac5"
+                                    fill="#8dcac5" />
+                            </g>
+                        </g>
+                    </svg></a></li>
+        </ul>
+    </section>
+</main>
     <!-- /* //------------------------------header_footer */ -->
     <section class="footer">
         <div class="footerWrapper">
             <ul class="footerIcons">
-                <li class="footerIcon twIcon"><a href="#"><img src="images/twitter.svg" alt="icon"></a></li>
-                <li class="footerIcon telIcon"><a href="#"><img src="images/telegram.svg" alt="icon"></a></li>
-                <li class="footerIcon vkIcon"><a href="#"><img src="images/vk.svg" alt="icon"></a></li>
-                <li class="footerIcon fbIcon"><a href="#"><img src="images/facebook.svg" alt="icon"></a></li>
+                <li class="footerIcon twIcon"><a href="https://twitter.com/" target="_blank"><img src="images/twitter.svg" alt="icon"></a></li>
+                    <li class="footerIcon telIcon"><a href="https://telegram.org/" target="_blank"><img src="images/telegram.svg" alt="icon"></a></li>
+                    <li class="footerIcon vkIcon"><a href="https://vk.com/" target="_blank"><img src="images/vk.svg" alt="icon"></a></li>
+                    <li class="footerIcon fbIcon"><a href="https://facebook.com/" target="_blank"><img src="images/facebook.svg" alt="icon"></a></li>
 
             </ul>
             <ul class="footerList headerFlex">
@@ -254,6 +288,7 @@
 
 
     <script src="./premier.js"></script>
+    <script src="../../sort.js"></script>
 </body>
 
 </html>
