@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/cardDescr.css" />
-    <link rel="stylesheet" href="../style.css">
+    <!-- <link rel="stylesheet" href="../style.css"> -->
   </head>
   <body>
-    <header>
+    <header id="comeBack">
       <section class="headerSection">
           <div class="headerWrapper">
   
@@ -19,10 +19,12 @@
                           <span class="menu-icon closed" id="js-menuBtn"></span></div>
   
   
-                  <div class="headerLogo"><img src="images/menuLogo.png" width="25px" height="25px" alt="picture"></div>
-                  <div class="headerTitle">
-                      <h2 class="headerTitleText">Mooogle</h2>
-                  </div>
+                          <a href="../index.html">
+                            <div class="headerLogo"><img src="images/menuLogo.png" width="25px" height="25px" alt="picture"></div>
+                            <div class="headerTitle">
+                                <h2 class="headerTitleText">Mooogle</h2>
+                            </div>
+                        </a>
               </div>
               <div>
                   <div> <input class="headerInput inputCard" type="" name="" placeholder="Search"></div>
@@ -76,71 +78,74 @@
                       </div>
                   </label>
                   <div class="menuRightBlock">
-  
-                      <label for="idishka1">
-                          <h2 class="menuTitle">Фильмы</h2>
-                      </label>
-                      <input type="checkbox" id="idishka1" class="click">
-  
-                      <ul class="menuList">
-                          <li><a href="#">Премьеры</a></li>
-                          <li><a href="#">Сейчас на экранах</a></li>
-                          <li><a href="top100.html">Топ 100</a></li>
-                      </ul>
-                  </div>
-              </div>
-              <div class="menuFlex">
-                  <label for="idishka2">
-                      <div class="menuIcon">
-                          <svg class="menuSvg" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -87 432 432"
-                              width="20px">
-                              <path class="menuSvg"
-                                  d="m278.90625 0h-248.90625c-16.5625.0195312-29.9804688 13.4375-30 30v197.421875c.0195312 16.5625 13.4375 29.980469 30 30h248.90625c16.558594-.019531 29.980469-13.4375 30-30v-197.421875c-.019531-16.5625-13.441406-29.9804688-30-30zm0 0"
-                                  fill="#372c48" />
-                              <path d="m328.90625 169.800781 103.09375 56.285157v-194.105469l-103.09375 56.285156zm0 0"
-                                  fill="#372c48" /></svg>
-  
-                      </div>
-                  </label>
-                  <div class="menuRightBlock">
-                      <label for="idishka2">
-                          <h2 class="menuTitle">Сериалы</h2>
-                      </label>
-                      <input type="checkbox" id="idishka2" class="click">
-                      <ul class="menuList">
-                              <li><a href="#">Популярные</a></li>
-                              <li><a href="#">Сейчас в эфире</a></li>
-                              <li><a href="#">Лучший рейтинг</a></li>
-                      </ul>
-                  </div>
-              </div>
-              <div class="menuFlex">
-                  <label for="idishka3">
-                      <div class="menuIcon">
-                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                              id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 306 306"
-                              style="enable-background:new 0 0 306 306;" xml:space="preserve">
-                              <g>
-                                  <g id="star-rate">
-                                      <polygon class="menuSvg"
-                                          points="153,230.775 247.35,299.625 211.65,187.425 306,121.125 191.25,121.125 153,6.375 114.75,121.125 0,121.125     94.35,187.425 58.65,299.625   "
-                                          fill="#372c48" />
-                                  </g>
-  
-                          </svg>
-                      </div>
-                  </label>
-                  <div class="menuRightBlock">
-                      <label for="idishka3">
-                          <h2 class="menuTitle">Избранное</h2>
-                      </label>
-                      <input type="checkbox" id="idishka3" class="click">
-                      </div>
-              </div>
-  
-  
-          </div>
-      </section>
+        
+                    <label for="idishka1">
+                        <a href="../index.html"> <h2 class="menuTitle">Фильмы</h2></a>
+                    </label>
+                    <input type="checkbox" id="idishka1" class="click">
+
+                    <ul class="menuList">
+                        <li><a href="../films/premer/premier.html">Премьеры</a></li>
+                        <li><a href="../films/onEkran/onEkran.html">Сейчас на экранах</a></li>
+                        <li><a href="../films/top100/top100.html">Топ 100</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menuFlex">
+                <label for="idishka2">
+                    <div class="menuIcon">
+                        <svg class="menuSvg" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -87 432 432"
+                            width="20px">
+                            <path class="menuSvg"
+                                d="m278.90625 0h-248.90625c-16.5625.0195312-29.9804688 13.4375-30 30v197.421875c.0195312 16.5625 13.4375 29.980469 30 30h248.90625c16.558594-.019531 29.980469-13.4375 30-30v-197.421875c-.019531-16.5625-13.441406-29.9804688-30-30zm0 0"
+                                fill="#372c48" />
+                            <path d="m328.90625 169.800781 103.09375 56.285157v-194.105469l-103.09375 56.285156zm0 0"
+                                fill="#372c48" /></svg>
+
+                    </div>
+                </label>
+                <div class="menuRightBlock">
+                    
+                    <label for="idishka2">
+                            <a href="../Serial/serials.html"><h2 class="menuTitle">Сериалы</h2></a>
+                        
+                    </label>
+               
+                    <input type="checkbox" id="idishka2" class="click">
+                    <ul class="menuList">
+                            <li><a href="../Serial/Popular/index.html">Популярные</a></li>
+                            <li><a href="../Serial/onEfir/index.html">Сейчас в эфире</a></li>
+                            <li><a href="../Serial/BestReit/index.html">Лучший рейтинг</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menuFlex">
+                <label for="idishka3">
+                    <div class="menuIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                            id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 306 306"
+                            style="enable-background:new 0 0 306 306;" xml:space="preserve">
+                            <g>
+                                <g id="star-rate">
+                                    <polygon class="menuSvg"
+                                        points="153,230.775 247.35,299.625 211.65,187.425 306,121.125 191.25,121.125 153,6.375 114.75,121.125 0,121.125     94.35,187.425 58.65,299.625   "
+                                        fill="#372c48" />
+                                </g>
+
+                        </svg>
+                    </div>
+                </label>
+                <div class="menuRightBlock">
+                    <label for="idishka3">
+                        <h2 class="menuTitle">Избранное</h2>
+                    </label>
+                    <input type="checkbox" id="idishka3" class="click">
+                    </div>
+            </div>
+
+
+        </div>
+</section>
   </header>
   <main>
       <section class="main__wrapper--relative">
@@ -315,6 +320,6 @@
     </section>
     
     <script src="./js/cardDescr.js"></script>
-    <script src="../index.js"></script>
+    <!-- <script src="../index.js"></script> -->
   </body>
 </html>

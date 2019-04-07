@@ -144,6 +144,7 @@ height: 90px;
 }
 .headerLogo {
     margin-right: 15px;
+    display: flex;
 }
 .headerTitle {
     padding-top: 3px;
@@ -239,7 +240,7 @@ color: #372c48;
         border-bottom: 1px solid #372c48;
         margin-right: 15px;
         display: block;
-        background: url(../images/search.svg) no-repeat center left;
+        background: url(./images/search.svg) no-repeat center left;
 
     }
 }
