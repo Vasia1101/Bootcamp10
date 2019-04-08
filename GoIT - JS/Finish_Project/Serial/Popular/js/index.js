@@ -157,3 +157,24 @@ arrowLinkLeft.addEventListener('click', getPageSerialsPopular);
 
 arrowLinkRight.addEventListener('click', getPageSerialsPopular);
 window.addEventListener('load', getFilmCardsPopular(actPopular));
+
+
+
+ // ================================ Natalia Ts ===============
+
+ document.querySelector('.js-openFilm').addEventListener('click', getId);
+ // newGetableMainPoster.forEach(elem => elem.addEventListener('click', getId));
+ function getId(event) {
+ 
+ 
+     let target = event.target; 
+     if (target.hasAttribute('id')) {
+         let filmId = target.getAttribute('id');
+         
+         localStorage.setItem('id', filmId);
+         window.open("../../MooviDB1/cardDescr.html");
+ 
+         // getFilmById(filmId);
+         // console.log(filmId);
+ // myWindow.document.write("<p>This window's name is: " + filmId + "</p>");
+ }}

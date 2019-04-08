@@ -156,7 +156,7 @@ let getableMainPoster = document.querySelectorAll('.js-favorite'),
     filteredArr = [];
 
 window.addEventListener("load", function () {
-    if (localStorage.getItem('Favorite', resultArr) === null) {localStorage.setItem('Favorite', 'Name:');}
+    if (localStorage.getItem('Favorite', resultArr) === null) {localStorage.setItem('Favorite', ' ');}
     if (localStorage.key !== null) {
         filteredArr = localStorage.getItem('Favorite', resultArr).split(',');
         newSetableSVG.forEach((element) => {

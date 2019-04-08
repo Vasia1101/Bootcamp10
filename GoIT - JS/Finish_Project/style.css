@@ -318,7 +318,7 @@ color: #372c48;
 
   /* ================================== */
   /* Natalia Chas CSS */
-  /* Natalia Chas CSS */
+  
   .wrapper {
     margin: 20px auto;
  }
@@ -336,7 +336,7 @@ color: #372c48;
 .picture11,
 .picture12 {
     width: 48%;
-    height: 55vh;
+    height: 50vh;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.726), rgba(128, 128, 128, 0)), url(./images/men.png);
     background-size: cover;
     position: relative;
@@ -442,7 +442,7 @@ color: #372c48;
     .picture7,
     .picture8 {
        width: 48%;
-       height: 55vh;
+       height: 50vh;
        background: linear-gradient(to top, rgba(0, 0, 0, 0.726), rgba(128, 128, 128, 0)), url(./images/menTablet.png);
        background-repeat: no-repeat;
        background-size: cover;
@@ -465,6 +465,9 @@ color: #372c48;
  }
  
  @media (min-width: 1024px) {
+    .wrapper { 
+        max-width: 1200px;
+    }
     
     .headline {
        font-size: 30px;

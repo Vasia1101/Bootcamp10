@@ -345,7 +345,7 @@ color: #372c48;
 .pictureSerials11,
 .pictureSerials12 {
    width: 48%;
-   height: 55vh;
+   height: 50vh;
    background: linear-gradient(to top, rgba(0, 0, 0, 0.726), rgba(128, 128, 128, 0)), url(../images/men.png);
    background-size: cover;
    position: relative;
@@ -450,6 +450,9 @@ color: #372c48;
 
 
 @media (min-width: 1024px) {
+    .wrapper{ 
+        max-width: 1200px;
+    }
 
    .headline {
       font-size: 30px;
