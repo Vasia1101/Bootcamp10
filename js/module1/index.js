@@ -1168,3 +1168,9 @@ console.log(sumProduct);
 // } else {
 //   console.log ('net takogo mesaca');
 // }
+const sirko = []; 
+sirko.push('собака'); 
+sirko.unshift('мій пес'); 
+sirko.length = 3; 
+sirko.pop();
+console.log(sirko);

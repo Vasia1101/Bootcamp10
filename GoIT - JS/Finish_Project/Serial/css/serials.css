@@ -683,3 +683,19 @@ color: #372c48;
        text-align: left;
        color: rgba(0, 0, 0, 0.87);
    }
+   /* ================NatalyTas(search not found)=============================== */
+.requestNotFound {
+    width: 100%;
+    height: 200px;
+    background-color:#addad6;
+    text-align: center;
+   line-height: 200px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.topFilms{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

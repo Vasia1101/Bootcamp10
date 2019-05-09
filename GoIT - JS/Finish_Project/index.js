@@ -305,7 +305,11 @@ function searchfilm() {
       //=========слушатель для отрисовки карточки фильма из списка выведенных при поиске
       filmOfSerch = Array.from(document.querySelectorAll(".js-filmOfSearch"));
       filmOfSerch.forEach(elem => elem.addEventListener("click", getId));
-    });} else {mainPage.style.display = "block"}
+    });} else {
+      topFilms.innerHTML = "";
+      mainPage.style.display = "block";
+
+  }
 }
 
 function clearHeaderInput() {

@@ -1,0 +1,16 @@
+.imageCard {
+    /* width: 320px;
+    height: 240px;
+    border: 25px solid #fafafa;
+    border-top-width: 5px;
+    border-bottom-width: 5px; */
+    margin: 0 auto;
+    width: 320px;
+    height: 240px;
+    padding: 30px;
+    border: 3px solid #ffff00;
+    background-color: #fafafa;
+    background-repeat: no-repeat;
+    background-position: 100px 100px;
+
+}

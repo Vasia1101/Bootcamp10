@@ -1,0 +1,24 @@
+.Appheader {
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+
+.weather {
+
+  padding: 20px;
+  background-image: url(https://source.unsplash.com/user/wsanter);
+  /* background: center top;
+  width: 100%; */
+  /* height: 100vh; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+
+}

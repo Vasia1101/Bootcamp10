@@ -451,7 +451,7 @@ window.addEventListener('load', getFilmCardsLatest(actLatest));
         filmOfSerch.forEach(elem => elem.addEventListener("click", getIdOfSearch));
       });
     } else {
-      // тут необходимо вызвать Катину ф-ю получения фильмов премьеры
+      getFilmCardsLatest()
     }
   }
   
