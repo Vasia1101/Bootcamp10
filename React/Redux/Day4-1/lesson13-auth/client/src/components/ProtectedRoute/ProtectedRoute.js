@@ -1,11 +1,11 @@
-import React from 'react';
-import { Route, Redirect } from 'react-router-dom';
-import { connect } from 'react-redux';
-import * as selectors from '../../redux/selectors';
+import React from "react";
+import { Route, Redirect } from "react-router-dom";
+import { connect } from "react-redux";
+import * as selectors from "../redux/selectors";
 
 const ProtectedRoute = ({
   component: Component,
-  redirectTo = '/',
+  redirectTo = "/",
   isAuthenticated,
   ...rest
 }) => (

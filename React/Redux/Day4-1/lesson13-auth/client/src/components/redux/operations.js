@@ -1,24 +1,83 @@
-import axios from "axios";
+import axios from 'axios';
 import {
-  SIGN_UP_REQUEST,
-  SIGN_UP_SUCCESS,
-  SIGN_UP_ERROR,
-  SIGN_IN_REQUEST,
-  SIGN_IN_SUCCESS,
-  SIGN_IN_ERROR,
-  SIGN_OUT_REQUEST,
-  SIGN_OUT_SUCCESS,
-  SIGN_OUT_ERROR
-} from "./actions";
+  signUpRequest,
+  signUpSuccess,
+  signUpError,
+  signInRequest,
+  signInSuccess,
+  signInError,
+  signOutRequest,
+  signOutSuccess,
+  // refreshUserStart,
+  // refreshUserSuccess
+} from './actions';
+import * as selectors from './selectors';
 
-import * as selectors from "./selectors";
-
-axios.defaults.baseURL = "http://localhost:4040";
+axios.defaults.baseURL = 'http://localhost:4040';
 
 const setAuthHeader = token => {
-  axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
+  axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
 };
-const clearAuthHeader = token => {
-    axios.defaults.headers.common["Authorization"] = null;
-  };
-  
+
+const clearAuthHeader = () => {
+  axios.defaults.headers.common['Authorization'] = null;
+};
+
+export const signUp = credentials => dispatch => {
+  dispatch(signUpRequest());
+
+  axios
+    .post('/auth/signup', credentials)
+    .then(({
+      data
+    }) => {
+      setAuthHeader(data.token);
+
+      dispatch(signUpSuccess(data));
+    })
+    .catch(error => dispatch(signUpError(error)));
+};
+
+export const signIn = credentials => dispatch => {
+  dispatch(signInRequest());
+
+  axios
+    .post('/auth/signin', credentials)
+    .then(({
+      data
+    }) => {
+      setAuthHeader(data.token);
+      dispatch(signInSuccess(data));
+    })
+    .catch(error => dispatch(signInError(error)));
+};
+
+export const signOut = () => dispatch => {
+  dispatch(signOutRequest());
+
+  axios.post('/auth/signout').then(() => {
+    clearAuthHeader();
+    dispatch(signOutSuccess());
+  });
+};
+
+// export const refreshCurrentUser = () => (dispatch, getState) => {
+//   const token = selectors.getToken(getState());
+
+//   if (!token) return;
+
+//   setAuthHeader(token);
+
+//   dispatch(refreshUserStart());
+
+//   axios
+//     .get('/auth/current')
+//     .then(({
+//       data
+//     }) => dispatch(refreshUserSuccess(data.user)))
+//     .catch(error => {
+//       // dispach екшен чтобы убрать токен из state
+//       clearAuthHeader();
+//       console.log('Error while refreshing: ', error);
+//     });
+// };

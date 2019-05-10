@@ -30,12 +30,12 @@ export const signInRequest = () => ({
   type: actionTypes.SIGN_IN_REQUEST
 });
 
-export const signUpSuccess = data => ({
+export const signInSuccess = data => ({
   type: actionTypes.SIGN_IN_SUCCESS,
   payload: data
 });
 
-export const signUpError = error => ({
+export const signInError = error => ({
   type: actionTypes.SIGN_IN_ERROR,
   payload: {
     error

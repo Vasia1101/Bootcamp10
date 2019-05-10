@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import * as operations from '../../redux/operations';
-import Form from '../common/Form/Form';
-import Input from '../common/Input/Input';
-import Label from '../common/Label/Label';
-import Button from '../common/Button/Button';
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import * as operations from "../redux/operations";
+import Form from "../common/Form/Form";
+import Input from "../common/Input/Input";
+import Label from "../common/Label/Label";
+import Button from "../common/Button/Button";
 
-const INITIAL_STATE = { name: '', email: '', password: '' };
+const INITIAL_STATE = { name: "", email: "", password: "" };
 
 class SignUpForm extends Component {
   state = { ...INITIAL_STATE };

@@ -3,24 +3,26 @@
 const menuBtn = document.getElementById('js-menuBtn');
 const menuContainer = document.getElementById('js-menuContainer');
 
-const menuIconClosed = "menu-icon closed"; 
-const menuIconOpened = "menu-icon opened"; 
-const menuContClosed = "menu-container closed"; 
-const menuContOpened = "menu-container opened"; 
+const menuIconClosed = "menu-icon closed";
+const menuIconOpened = "menu-icon opened";
+const menuContClosed = "menu-container closed";
+const menuContOpened = "menu-container opened";
 
-menuBtn.addEventListener('click', function() {
-  if (menuBtn.className == menuIconClosed) {
-    menuBtn.className = menuIconOpened;
-    menuContainer.className = menuContOpened;
-  } else if (menuBtn.className == menuIconOpened) {
-    menuBtn.className = menuIconClosed;
-    menuContainer.className = menuContClosed;
-  }
-}) ;
-document.querySelector('main').addEventListener('click', () => {menuBtn.className = menuIconClosed;
-   menuContainer.className = menuContClosed;});
+menuBtn.addEventListener('click', function () {
+   if (menuBtn.className == menuIconClosed) {
+      menuBtn.className = menuIconOpened;
+      menuContainer.className = menuContOpened;
+   } else if (menuBtn.className == menuIconOpened) {
+      menuBtn.className = menuIconClosed;
+      menuContainer.className = menuContClosed;
+   }
+});
+document.querySelector('main').addEventListener('click', () => {
+   menuBtn.className = menuIconClosed;
+   menuContainer.className = menuContClosed;
+});
 
-   // ============================= Kate
+// ============================= Kate
 
 let arrowLinkLeft = document.querySelector('[data-action=left]');
 let arrowLinkRight = document.querySelector('[data-action=right]');
@@ -38,35 +40,34 @@ let actPopular = 1;
 
 
 
-let getPageSerialsPopular = function(evt){
+let getPageSerialsPopular = function (evt) {
    let event = evt.preventDefault();
- 
-   if(evt.currentTarget.dataset.action === 'right'){
-      actPopular =  Number(actPopular)+1;
+
+   if (evt.currentTarget.dataset.action === 'right') {
+      actPopular = Number(actPopular) + 1;
       getFilmCardsPopular(actPopular);
-   } else if(evt.currentTarget.dataset.action === 'left'){
-      actPopular =  Number(actPopular)-1;
+   } else if (evt.currentTarget.dataset.action === 'left') {
+      actPopular = Number(actPopular) - 1;
       getFilmCardsPopular(actPopular);
-   } 
-   else if(evt.target.textContent){
+   } else if (evt.target.textContent) {
       actPopular = Number(evt.target.textContent);
       getFilmCardsPopular(actPopular);
-   } 
+   }
 }
 
 
 
-let getFilmCardsPopular = function(i){
-let apiSerialsPopular = `https://api.themoviedb.org/3/tv/popular?api_key=c2b5de19f08adc486af54dcc0c9946be&language=ru-RU&page=${i}`;
-serialsPopular.innerHTML = '';
+let getFilmCardsPopular = function (i) {
+   let apiSerialsPopular = `https://api.themoviedb.org/3/tv/popular?api_key=c2b5de19f08adc486af54dcc0c9946be&language=ru-RU&page=${i}`;
+   serialsPopular.innerHTML = '';
 
-fetch(apiSerialsPopular)
-   .then(response => response.json())
-   .then(data => {
-      for (let el of data.results) {
-         console.log(el);
+   fetch(apiSerialsPopular)
+      .then(response => response.json())
+      .then(data => {
+         for (let el of data.results) {
+            console.log(el);
 
-         serialsPopular.innerHTML += `
+            serialsPopular.innerHTML += `
                <div class="pictureCard js-favorite" id="${el.id}">
                <div class="pictureCover js-cardOfFilm"></div>
                <img width="100%" src='https://image.tmdb.org/t/p/w185/${el.poster_path}'></img>
@@ -93,79 +94,80 @@ fetch(apiSerialsPopular)
                   <p class="textCard">${el.name} (${el.first_air_date.slice(0, 4)})</p>
                </div>
            `;
-      }
-      // ----------------------------- Juli Modal ------------------------//
+         }
+         // ----------------------------- Juli Modal ------------------------//
 
-    ;(function() {
-      function isValue(el, arr) {
-          for (let i = 0; i < arr.length; i++) {
+         ;
+         (function () {
+            function isValue(el, arr) {
+               for (let i = 0; i < arr.length; i++) {
                   if (el.value) {
-                  el.classList.add("active");
-              } else {
-                  el.classList.remove("active");
-              }
-          }
-      }
-      
-      let inputs = document.querySelectorAll(".js_input");
-      let newArr = Array.from(inputs);
-      let close = document.querySelector('.js_close_icon');
-      let form = document.querySelector('.js_form');
-      let formWrapper = document.querySelector('.js_container_wrapper');
-      let thanksMessageModal = document.querySelector('.js_thanks_message_modal');
-      let openModal = document.querySelectorAll('.js-open_modal');
-      let bntOkModal = document.querySelector('.js_submit_ok');
-  
-      let formContent = document.querySelector('.js_form__content');
-  
-      newArr.forEach(element => element.addEventListener("change", () => isValue(element, newArr)));
-  
-      function sendForm() {
-          event.preventDefault();
-          showThanksMessage();
-      }
-  
-      close.addEventListener('click', function() {
-          formWrapper.classList.add('close_modal');
-      });
-      bntOkModal.addEventListener('click', function() {
-          formWrapper.classList.add('close_modal');
-      });
-      
-      function showThanksMessage() {
-          thanksMessageModal.classList.add('active');
-          formContent.classList.add('hide');
-      }
-      
-      openModal.forEach(element => element.addEventListener('click', function() {
-          formWrapper.classList.remove('close_modal');
-          thanksMessageModal.classList.remove('active');
-          formContent.classList.remove('hide');
-          newArr.forEach(element => element.value = '');
-      }));
-  
-      form.addEventListener('submit', sendForm);
-  
-    })();
-     // ======================================NatalyTas ф-я для получения ID
+                     el.classList.add("active");
+                  } else {
+                     el.classList.remove("active");
+                  }
+               }
+            }
+
+            let inputs = document.querySelectorAll(".js_input");
+            let newArr = Array.from(inputs);
+            let close = document.querySelector('.js_close_icon');
+            let form = document.querySelector('.js_form');
+            let formWrapper = document.querySelector('.js_container_wrapper');
+            let thanksMessageModal = document.querySelector('.js_thanks_message_modal');
+            let openModal = document.querySelectorAll('.js-open_modal');
+            let bntOkModal = document.querySelector('.js_submit_ok');
+
+            let formContent = document.querySelector('.js_form__content');
+
+            newArr.forEach(element => element.addEventListener("change", () => isValue(element, newArr)));
+
+            function sendForm() {
+               event.preventDefault();
+               showThanksMessage();
+            }
+
+            close.addEventListener('click', function () {
+               formWrapper.classList.add('close_modal');
+            });
+            bntOkModal.addEventListener('click', function () {
+               formWrapper.classList.add('close_modal');
+            });
+
+            function showThanksMessage() {
+               thanksMessageModal.classList.add('active');
+               formContent.classList.add('hide');
+            }
+
+            openModal.forEach(element => element.addEventListener('click', function () {
+               formWrapper.classList.remove('close_modal');
+               thanksMessageModal.classList.remove('active');
+               formContent.classList.remove('hide');
+               newArr.forEach(element => element.value = '');
+            }));
+
+            form.addEventListener('submit', sendForm);
+
+         })();
+         // ======================================NatalyTas ф-я для получения ID
 
 
-   let cardOfFilm = Array.from(document.querySelectorAll(".js-cardOfFilm"));//собирает все фильмы на странице "на экранах"
-   cardOfFilm.forEach(elem => elem.addEventListener("click", getId));
-   
-   function getId(event) {
-     let target = event.target.parentNode;  
-     console.log(target);
-     if (target.hasAttribute("id")) {
-       let filmId = target.getAttribute("id");
-       localStorage.setItem("id", filmId);
-       window.open("../../CardSerial/cardSerial.html");
-     }
-   }
-   });
+         let cardOfFilm = Array.from(document.querySelectorAll(".js-cardOfFilm")); //собирает все фильмы на странице "на экранах"
+         cardOfFilm.forEach(elem => elem.addEventListener("click", getId));
+
+         function getId(event) {
+            let target = event.target.parentNode;
+            console.log(target);
+            if (target.hasAttribute("id")) {
+               let filmId = target.getAttribute("id");
+               localStorage.setItem("id", filmId);
+               window.open("../../../CardSerial/cardSerial.html");
+            }
+         }
+      });
 }
-   
-for(let el of pagesLinkPopular){
+
+for (let el of pagesLinkPopular) {
    el.addEventListener('click', getPageSerialsPopular);
 }
 arrowLinkLeft.addEventListener('click', getPageSerialsPopular);
@@ -175,20 +177,20 @@ window.addEventListener('load', getFilmCardsPopular(actPopular));
 
 
 
- // ======================================NatalyTas======================================//
+// ======================================NatalyTas======================================//
 
-   
-   //ф-я для получения ID из выведенных в результате поиска
-   function getIdOfSearch(event) {  
-      let target = event.target;  
-      console.log(target);
-      
-      if (target.hasAttribute("id")) {
-        let filmId = target.getAttribute("id");
-        localStorage.setItem("id", filmId);
-        window.open("../../CardSerial/cardSerial.html");
-      }
-    }
+
+//ф-я для получения ID из выведенных в результате поиска
+function getIdOfSearch(event) {
+   let target = event.target;
+   console.log(target);
+
+   if (target.hasAttribute("id")) {
+      let filmId = target.getAttribute("id");
+      localStorage.setItem("id", filmId);
+      window.open("../../CardSerial/cardSerial.html");
+   }
+}
 
 // ================================ Natalia Ts (search) ===============
 
@@ -199,26 +201,26 @@ let inputValue;
 let filmOfSerch;
 
 function searchfilm() {
-  event.preventDefault();
-  inputValue = headerInput.value;
-  if(inputValue) {
-   serialsPopular.innerHTML = "";
-  console.log(inputValue);
-  let API = `https://api.themoviedb.org/3/search/multi?api_key=c2b5de19f08adc486af54dcc0c9946be&language=ru-RU&query=${inputValue}&page=1&include_adult=false`;
-  fetch(API)
-    .then(response => {
-      if (response.ok) return response.json();
-      throw new Error("Error fetching data");
-    })
-    .then(data => {
-      console.log(data);
-      if (data.results.length !== 0) {
-        for (let el of data.results) {
-          let img = "../images/bigCow.png";
-          if (el.media_type === "movie" || el.media_type === "tv") {
-            if (el.poster_path !== null) {
-              img = `https://image.tmdb.org/t/p/w185/${el.poster_path}`;
-              serialsPopular.innerHTML += `
+   event.preventDefault();
+   inputValue = headerInput.value;
+   if (inputValue) {
+      serialsPopular.innerHTML = "";
+      console.log(inputValue);
+      let API = `https://api.themoviedb.org/3/search/multi?api_key=c2b5de19f08adc486af54dcc0c9946be&language=ru-RU&query=${inputValue}&page=1&include_adult=false`;
+      fetch(API)
+         .then(response => {
+            if (response.ok) return response.json();
+            throw new Error("Error fetching data");
+         })
+         .then(data => {
+            console.log(data);
+            if (data.results.length !== 0) {
+               for (let el of data.results) {
+                  let img = "../images/bigCow.png";
+                  if (el.media_type === "movie" || el.media_type === "tv") {
+                     if (el.poster_path !== null) {
+                        img = `https://image.tmdb.org/t/p/w185/${el.poster_path}`;
+                        serialsPopular.innerHTML += `
                  <div class="pictureCard ">
                  <div class="pictureCover js-filmOfSearch" id="${el.id}"></div>
                  <img width="100%" src='${img}'></img>
@@ -241,8 +243,8 @@ function searchfilm() {
                     <p class="textCard">${el.title || el.name}</p>
                  </div>
              `;
-            } else {
-               serialsPopular.innerHTML += `
+                     } else {
+                        serialsPopular.innerHTML += `
                  <div class="pictureCard">
                  <div class="pictureCover js-filmOfSearch" id="${el.id}"></div>
                  <img width="100%" src='${img}'></img>
@@ -265,26 +267,26 @@ function searchfilm() {
                     <p class="textCard">${el.title || el.name}</p>
                  </div>
              `;
+                     }
+                  }
+
+               }
+            } else {
+               serialsPopular.innerHTML = `<div class="requestNotFound" height="200px" background-color="blue" ><p>По Вашему запросу ничего не найдено!</p></div>`;
             }
-          }
-          
-        }
-      } else {
-         serialsPopular.innerHTML = `<div class="requestNotFound" height="200px" background-color="blue" ><p>По Вашему запросу ничего не найдено!</p></div>`;
-      }
-      //=========слушатель для отрисовки карточки фильма из списка выведенных при поиске
-      filmOfSerch = Array.from(document.querySelectorAll(".js-filmOfSearch"));
-      filmOfSerch.forEach(elem => elem.addEventListener("click", getIdOfSearch));
-    });
-  } else {
-   getFilmCardsPopular()
-  }
+            //=========слушатель для отрисовки карточки фильма из списка выведенных при поиске
+            filmOfSerch = Array.from(document.querySelectorAll(".js-filmOfSearch"));
+            filmOfSerch.forEach(elem => elem.addEventListener("click", getIdOfSearch));
+         });
+   } else {
+      getFilmCardsPopular()
+   }
 }
 
 function clearHeaderInput() {
-  if (headerInput.value) {
-    headerInput.value = "";
-  }
+   if (headerInput.value) {
+      headerInput.value = "";
+   }
 }
 
 headerInput.addEventListener("click", clearHeaderInput);

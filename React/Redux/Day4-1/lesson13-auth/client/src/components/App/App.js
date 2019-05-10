@@ -1,19 +1,19 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { Switch, Route } from 'react-router-dom';
-import { SignIn, SignUp } from '../../pages';
-import Header from '../Header/Header';
-import * as operations from '../../redux/operations';
-import ProtectedRoute from '../ProtectedRoute/ProtectedRoute';
-import Home from '../../pages/Home';
-import About from '../../pages/About';
-import Profile from '../../pages/Profile';
-import Dashboard from '../../pages/Dashboard';
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { Switch, Route } from "react-router-dom";
+import { SignIn, SignUp } from "../../pages";
+import Header from "../Header/Header";
+import * as operations from "../redux/operations";
+import ProtectedRoute from "../ProtectedRoute/ProtectedRoute";
+import Home from "../../pages/Home";
+import About from "../../pages/About";
+import Profile from "../../pages/Profile";
+import Dashboard from "../../pages/Dashboard";
 
 class App extends Component {
-  componentDidMount() {
-    this.props.refreshCurrentUser();
-  }
+  // componentDidMount() {
+  //   this.props.refreshCurrentUser();
+  // }
 
   render() {
     return (
@@ -43,6 +43,6 @@ class App extends Component {
 }
 
 export default connect(
-  null,
-  { refreshCurrentUser: operations.refreshCurrentUser }
+  null
+  // { refreshCurrentUser: operations.refreshCurrentUser }
 )(App);
