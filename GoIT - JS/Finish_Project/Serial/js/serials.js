@@ -1,4 +1,4 @@
-// function menu
+﻿// function menu
 document.querySelector('main').addEventListener('click', () => {
   menuBtn.className = menuIconClosed;
   menuContainer.className = menuContClosed;
@@ -174,7 +174,7 @@ fetch(apiSerialsOnTheAir)
 //         let filmId = target.getAttribute('id');
 
 //         localStorage.setItem('id', filmId);
-//         window.open("../../CardSerial/cardSerial.html");
+//         window.open("../../../CardSerial/cardSerial.html");
 
 //         // getFilmById(filmId);
 //         // console.log(filmId);

@@ -1,4 +1,4 @@
-// function menu
+﻿// function menu
 
 const menuBtn = document.getElementById('js-menuBtn');
 const menuContainer = document.getElementById('js-menuContainer');
@@ -181,7 +181,7 @@ function getIdOfSearch(event) {
    if (target.hasAttribute("id")) {
       let filmId = target.getAttribute("id");
       localStorage.setItem("id", filmId);
-      window.open("../../MooviDB1/cardDescr.html");
+      window.open("../../../MooviDB1/cardDescr.html");
    }
 }
 
