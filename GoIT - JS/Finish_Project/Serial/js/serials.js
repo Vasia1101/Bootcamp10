@@ -1,17 +1,15 @@
-﻿// function menu
-document.querySelector('main').addEventListener('click', () => {
-  menuBtn.className = menuIconClosed;
-  menuContainer.className = menuContClosed;
-});
+// function menu
+document.querySelector('main').addEventListener('click', () => {menuBtn.className = menuIconClosed;
+  menuContainer.className = menuContClosed;});
 const menuBtn = document.getElementById('js-menuBtn');
 const menuContainer = document.getElementById('js-menuContainer');
 
-const menuIconClosed = "menu-icon closed";
-const menuIconOpened = "menu-icon opened";
-const menuContClosed = "menu-container closed";
-const menuContOpened = "menu-container opened";
+const menuIconClosed = "menu-icon closed"; 
+const menuIconOpened = "menu-icon opened"; 
+const menuContClosed = "menu-container closed"; 
+const menuContOpened = "menu-container opened"; 
 
-menuBtn.addEventListener('click', function () {
+menuBtn.addEventListener('click', function() {
   if (menuBtn.className == menuIconClosed) {
     menuBtn.className = menuIconOpened;
     menuContainer.className = menuContOpened;
@@ -19,7 +17,7 @@ menuBtn.addEventListener('click', function () {
     menuBtn.className = menuIconClosed;
     menuContainer.className = menuContClosed;
   }
-});
+  });
 
 
 
@@ -50,20 +48,19 @@ fetch(apiSerialsPopular)
       el.setAttribute('id', `${res[i].id}`);
       i++;
     });
-    // ----------------------------- Juli Modal ------------------------//
+  // ----------------------------- Juli Modal ------------------------//
 
-    ;
-    (function () {
+    ;(function() {
       function isValue(el, arr) {
-        for (let i = 0; i < arr.length; i++) {
-          if (el.value) {
-            el.classList.add("active");
-          } else {
-            el.classList.remove("active");
+          for (let i = 0; i < arr.length; i++) {
+                  if (el.value) {
+                  el.classList.add("active");
+              } else {
+                  el.classList.remove("active");
+              }
           }
-        }
       }
-
+      
       let inputs = document.querySelectorAll(".js_input");
       let newArr = Array.from(inputs);
       let close = document.querySelector('.js_close_icon');
@@ -72,37 +69,37 @@ fetch(apiSerialsPopular)
       let thanksMessageModal = document.querySelector('.js_thanks_message_modal');
       let openModal = document.querySelectorAll('.js-open_modal');
       let bntOkModal = document.querySelector('.js_submit_ok');
-
+  
       let formContent = document.querySelector('.js_form__content');
-
+  
       newArr.forEach(element => element.addEventListener("change", () => isValue(element, newArr)));
-
+  
       function sendForm() {
-        event.preventDefault();
-        showThanksMessage();
+          event.preventDefault();
+          showThanksMessage();
       }
-
-      close.addEventListener('click', function () {
-        formWrapper.classList.add('close_modal');
+  
+      close.addEventListener('click', function() {
+          formWrapper.classList.add('close_modal');
       });
-      bntOkModal.addEventListener('click', function () {
-        formWrapper.classList.add('close_modal');
+      bntOkModal.addEventListener('click', function() {
+          formWrapper.classList.add('close_modal');
       });
-
+      
       function showThanksMessage() {
-        thanksMessageModal.classList.add('active');
-        formContent.classList.add('hide');
+          thanksMessageModal.classList.add('active');
+          formContent.classList.add('hide');
       }
-
-      openModal.forEach(element => element.addEventListener('click', function () {
-        formWrapper.classList.remove('close_modal');
-        thanksMessageModal.classList.remove('active');
-        formContent.classList.remove('hide');
-        newArr.forEach(element => element.value = '');
+      
+      openModal.forEach(element => element.addEventListener('click', function() {
+          formWrapper.classList.remove('close_modal');
+          thanksMessageModal.classList.remove('active');
+          formContent.classList.remove('hide');
+          newArr.forEach(element => element.value = '');
       }));
-
+  
       form.addEventListener('submit', sendForm);
-
+  
     })();
   });
 
@@ -162,7 +159,7 @@ fetch(apiSerialsOnTheAir)
     console.log(res);
   });
 
-// ================================ Natalia Ts ===============
+  // ================================ Natalia Ts ===============
 
 // document.querySelector('.js-openFilm').addEventListener('click', getId);
 // // newGetableMainPoster.forEach(elem => elem.addEventListener('click', getId));
@@ -172,9 +169,9 @@ fetch(apiSerialsOnTheAir)
 //     let target = event.target; 
 //     if (target.hasAttribute('id')) {
 //         let filmId = target.getAttribute('id');
-
+        
 //         localStorage.setItem('id', filmId);
-//         window.open("../../../CardSerial/cardSerial.html");
+//         window.open("../../CardSerial/cardSerial.html");
 
 //         // getFilmById(filmId);
 //         // console.log(filmId);
@@ -183,21 +180,21 @@ fetch(apiSerialsOnTheAir)
 // ================================ Natalia Ts ===============
 
 
-let cardOfFilm = Array.from(document.querySelectorAll(".js-cardOfFilm")); //собирает все фильмы на странице "сериалы"
+let cardOfFilm = Array.from(document.querySelectorAll(".js-cardOfFilm"));//собирает все фильмы на странице "сериалы"
 console.log(cardOfFilm);
 cardOfFilm.forEach(elem => elem.addEventListener("click", getId));
 
 function getId(event) {
 
 
-  let target = event.target;
-  if (target.hasAttribute('id')) {
-    let filmId = target.getAttribute('id');
-
-    localStorage.setItem('id', filmId);
-    window.open("../../../CardSerial/cardSerial.html");;
-  }
-}
+    let target = event.target; 
+    if (target.hasAttribute('id')) {
+        let filmId = target.getAttribute('id');
+        
+        localStorage.setItem('id', filmId);
+        window.open("../../CardSerial/cardSerial.html");
+;
+}}
 
 // ================================ Natalia Ts (search) ===============
 
@@ -213,25 +210,25 @@ let filmOfSerch;
 function searchfilm() {
   event.preventDefault();
   inputValue = headerInput.value;
-  if (inputValue) {
-    console.log(inputValue);
-    topFilms.innerHTML = "";
-    let API = `https://api.themoviedb.org/3/search/multi?api_key=c2b5de19f08adc486af54dcc0c9946be&language=ru-RU&query=${inputValue}&page=1&include_adult=false`;
-    fetch(API)
-      .then(response => {
-        if (response.ok) return response.json();
-        throw new Error("Error fetching data");
-      })
-      .then(data => {
-        console.log(data);
-        if (data.results.length !== 0) {
-          for (let el of data.results) {
-            let img = "../images/bigCow.png";
-            if (el.media_type === "movie" || el.media_type === "tv") {
-              if (el.poster_path !== null) {
-                img = `https://image.tmdb.org/t/p/w185/${el.poster_path}`;
-                mainPage.style.display = "none";
-                topFilms.innerHTML += `
+  if(inputValue) {
+  console.log(inputValue);
+  topFilms.innerHTML = "";
+  let API = `https://api.themoviedb.org/3/search/multi?api_key=c2b5de19f08adc486af54dcc0c9946be&language=ru-RU&query=${inputValue}&page=1&include_adult=false`;
+  fetch(API)
+    .then(response => {
+      if (response.ok) return response.json();
+      throw new Error("Error fetching data");
+    })
+    .then(data => {
+      console.log(data);
+      if (data.results.length !== 0) {
+        for (let el of data.results) {
+          let img = "../images/bigCow.png";
+          if (el.media_type === "movie" || el.media_type === "tv") {
+            if (el.poster_path !== null) {
+              img = `https://image.tmdb.org/t/p/w185/${el.poster_path}`;
+              mainPage.style.display = "none";
+              topFilms.innerHTML += `
                  <div class="pictureCard ">
                  <div class="pictureCover js-filmOfSearch" id="${el.id}"></div>
                  <img width="100%" src='${img}'></img>
@@ -254,9 +251,9 @@ function searchfilm() {
                     <p class="textCard">${el.title || el.name}</p>
                  </div>
              `;
-              } else {
-                mainPage.style.display = "none";
-                topFilms.innerHTML += `
+            } else {
+              mainPage.style.display = "none";
+              topFilms.innerHTML += `
                  <div class="pictureCard">
                  <div class="pictureCover js-filmOfSearch" id="${el.id}"></div>
                  <img width="100%" src='${img}'></img>
@@ -279,23 +276,21 @@ function searchfilm() {
                     <p class="textCard">${el.title || el.name}</p>
                  </div>
              `;
-              }
             }
           }
-        } else {
-          mainPage.style.display = "none";
-          topFilms.innerHTML = `<div class="requestNotFound" height="200px" background-color="blue" ><p>По Вашему запросу ничего не найдено!</p></div>`;
         }
-        //=========слушатель для отрисовки карточки фильма из списка выведенных при поиске
-        filmOfSerch = Array.from(document.querySelectorAll(".js-filmOfSearch"));
-        console.log(filmOfSerch);
-
-        filmOfSerch.forEach(elem => elem.addEventListener("click", getId));
-      });
-  } else {
-    mainPage.style.display = "block";
-    topFilms.innerHTML = "";
-  }
+      } else {
+        mainPage.style.display = "none";
+        topFilms.innerHTML = `<div class="requestNotFound" height="200px" background-color="blue" ><p>По Вашему запросу ничего не найдено!</p></div>`;
+      }
+      //=========слушатель для отрисовки карточки фильма из списка выведенных при поиске
+      filmOfSerch = Array.from(document.querySelectorAll(".js-filmOfSearch"));
+      console.log(filmOfSerch);
+      
+      filmOfSerch.forEach(elem => elem.addEventListener("click", getId));
+    });} else {
+      mainPage.style.display = "block";
+      topFilms.innerHTML = "";}
 }
 
 function clearHeaderInput() {

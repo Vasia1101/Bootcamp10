@@ -154,7 +154,7 @@ let getFilmCards = function (i) {
             if (target.hasAttribute("id")) {
                let filmId = target.getAttribute("id");
                localStorage.setItem("id", filmId);
-               window.open("../../../CardSerial/cardSerial.html");
+               window.open("../../CardSerial/cardSerial.html");
             }
          }
       });
