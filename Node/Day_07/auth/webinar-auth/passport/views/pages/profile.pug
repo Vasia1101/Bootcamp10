@@ -1,0 +1,10 @@
+extends ../layout
+
+block content
+  .container
+    if (user)
+      .user Name: #{user.nick || 'github user'}
+      .name Email: #{user.email}
+    if (message && message.length > 0)
+      .status.text-info #{message}
+    a(href="/" class="btn btn-warning") Вернуться на главную

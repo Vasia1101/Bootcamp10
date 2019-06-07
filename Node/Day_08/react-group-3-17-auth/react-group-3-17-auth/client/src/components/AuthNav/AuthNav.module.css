@@ -1,0 +1,23 @@
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.link {
+  padding: 0 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #212121;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.activeLink {
+  composes: link;
+  color: #2196f3;
+}

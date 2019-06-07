@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+.name {
+  line-height: 1;
+  font-size: 20px;
+  margin-right: 24px;
+}

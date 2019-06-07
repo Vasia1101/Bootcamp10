@@ -1,0 +1,30 @@
+extends ../layout.pug
+
+block content
+  .container
+    h4.title Main Page
+    .top-block
+      a.top-block__link(href="/profile" class="btn btn-info") Профиль
+      a.top-block__link(href="/logout" class="btn btn-warning") Выход
+      if (user)
+        p.alert.alert-success Добро пожаловать! #{user.nick || 'github user'}
+      else
+        p
+          a(href="/registration" class="btn btn-warning") Регистрация
+    if (!user)
+      form.form-horizontal(class="col-xs-6" action='/login' method='POST')
+        .row.form-inline
+          label(for="email" class="col-xs-3") Email
+          input(class="form-control col-xs-3" type="text" name="email" autocomplete="username" required)
+        .row.form-inline
+          label(for="password" class="col-xs-3") Пароль
+          input(class="form-control col-xs-3" type="password" name="password"  autocomplete="current-password" required)
+        .row.form-inline
+          input(type="checkbox", name="remember")
+          span Запомнить меня
+        .row.form-inline
+          button(class="btn btn-primary col-xs-12 col-sm-6" type="submit") Войти
+      
+        if (message && message.length > 0)
+          .status.alert.alert-warning(role="alert") #{message}
+      a(href="/github" class="btn btn-warning col-xs-offset-1") Github
