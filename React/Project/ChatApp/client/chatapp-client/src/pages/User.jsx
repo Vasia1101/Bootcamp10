@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import axios from "axios";
+
 import Scream from "../components/scream/Scream";
 import StaticProfile from "../components/profile/StaticProfile";
 
@@ -13,10 +14,13 @@ import { getUserData } from "../redux/actions/dataActions";
 
 class User extends Component {
   state = {
-    profile: null
+    profile: null,
+    screamIdParams: null
   };
   componentDidMount() {
     const handle = this.props.match.params.handle;
+    const screamId = this.props.match.params.screamId;
+    if (screamId) this.setState({ screamIdParams: screamId });
     this.props.getUserData(handle);
     axios
       .get(`/user/${handle}`)
@@ -27,20 +31,31 @@ class User extends Component {
   }
   render() {
     const { screams, loading } = this.props.data;
+    const { screamIdParams } = this.state;
     const screamsMarkup = loading ? (
       <p>Loading data ...</p>
     ) : screams === null ? (
       <p>No screams from this user</p>
-    ) : (
+    ) : !screamIdParams ? (
       screams.map(scream => <Scream key={scream.screamId} scream={scream} />)
+    ) : (
+      screams.map(scream => {
+        if (scream.screamId !== screamIdParams)
+          return <Scream key={scream.screamId} scream={scream} />;
+        else return <Scream key={scream.screamId} scream={scream} openDialog />;
+      })
     );
     return (
-      <Grid container spacing={6}>
+      <Grid container spacing={10}>
         <Grid item sm={8} xs={12}>
           {screamsMarkup}
         </Grid>
         <Grid item sm={4} xs={12}>
-          <StaticProfile profile={this.state.profile} />
+          {this.state.profile === null ? (
+            <p>Loading profile ...</p>
+          ) : (
+            <StaticProfile profile={this.state.profile} />
+          )}
         </Grid>
       </Grid>
     );

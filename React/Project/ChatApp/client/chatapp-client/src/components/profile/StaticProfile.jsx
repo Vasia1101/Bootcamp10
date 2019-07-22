@@ -1,6 +1,7 @@
-import React, { Component, Fragment } from "react";
+import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import withStyles from "@material-ui/core/styles/withStyles";
+import { Link } from "react-router-dom";
 import dayjs from "dayjs";
 // Mui stuff
 import MuiLink from "@material-ui/core/Link";
@@ -31,9 +32,6 @@ const styles = {
       textAlign: "center",
       "& span, svg": {
         verticalAlign: "middle"
-      },
-      "& a": {
-        color: theme.palette.primary.main
       }
     },
     "& hr": {
@@ -55,6 +53,36 @@ const StaticProfile = props => {
           <img src={imageUrl} alt="profile" className="profile-image" />
         </div>
         <hr />
+        <div className="profile-details">
+          <MuiLink
+            component={Link}
+            to={`users/${handle}`}
+            color="primary"
+            variant="h5"
+          >
+            @{handle}
+          </MuiLink>
+          <hr />
+          {bio && <Typography variant="body2">{bio}</Typography>}
+          {location && (
+            <Fragment>
+              <LocationOn color="primary" />
+              <span>{location}</span>
+              <hr />
+            </Fragment>
+          )}
+          {website && (
+            <Fragment>
+              <LinkIcon color="primary" />
+              <a href={website} target="_blank" rel="noopener noreferrer">
+                {" "}
+                {website}
+              </a>
+            </Fragment>
+          )}
+          <CalendarToday color="primary" />{" "}
+          <span>Joined {dayjs(createdAt).format("MMM YYYY")}</span>
+        </div>
       </div>
     </Paper>
   );

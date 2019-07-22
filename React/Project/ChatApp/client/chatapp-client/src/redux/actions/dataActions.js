@@ -129,7 +129,7 @@ export const getUserData = userHandle => dispatch => {
   axios
     .get(`/user/${userHandle}`)
     .then(res => {
-      dispatch({ type: SET_SCREAM, payload: res.data.screams });
+      dispatch({ type: SET_SCREAMS, payload: res.data.screams });
     })
     .catch(() => {
       dispatch({ type: SET_ERRORS, payload: null });

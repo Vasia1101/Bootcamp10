@@ -31,7 +31,6 @@ import { logoutUser, getUserData } from "./redux/actions/userActions";
 
 const theme = createMuiTheme(themeFile);
 
-let authenticated;
 const token = localStorage.FBIdToken;
 if (token) {
   const decodedToken = jwtDecode(token);
@@ -57,6 +56,11 @@ function App() {
               <AuthRoute exact path="/login" component={Login} />
               <AuthRoute exact path="/signup" component={SignUp} />
               <Route exact path="/users/:handle" component={User} />
+              <Route
+                exact
+                path="/users/:handle/scream/:screamId"
+                component={User}
+              />
             </Switch>
           </div>
         </Router>
