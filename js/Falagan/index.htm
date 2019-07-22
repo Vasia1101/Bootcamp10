@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calc</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Enter Loan Data:</th>
+        <td></td>
+        <th>Loan Balance, Cumulative Equity, and Interest Payment</th>
+      </tr>
+      <tr>
+          <td>Amount of the loan ($):</td>
+        <td><input id="amount" onchange="calculate();" /></td>
+        <td rowspan="8">
+          <canvas id="graph" width="400" height="250"></canvas>
+        </td>
+      </tr>
+      <tr>
+        <td>Annual Interest (%):</td>
+        <td><input id="apr" onchange="calculate();" /></td>
+      </tr>
+      <tr>
+        <td>Repayment period (years):</td>
+        <td><input id="years" onchange="calculate();" /></td>
+        <tr><td>Zipcode (to find lenders):</td>
+        <td><input id='zipcode' onchange="calculate();"/></td>
+        <tr>
+            <th>Approximate Pyment:</th>
+            <td>
+                <button onclick="calculate();">Calculate</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Montly payment:</td>
+            
+        </tr>
+        </tr>
+      </tr>
+    </table>
+
+    <script src="index.js"></script>
+  </body>
+</html>
