@@ -11,7 +11,7 @@ import Tooltip from "@material-ui/core//Tooltip";
 import Typography from "@material-ui/core/Typography";
 import Badge from "@material-ui/core/Badge";
 // Icons
-import NotificationsIcons from "@material-ui/icons/Notifications";
+import NotificationsIcon from "@material-ui/icons/Notifications";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import ChatIcon from "@material-ui/icons/Chat";
 // redux
@@ -28,6 +28,12 @@ class Notifications extends Component {
   handleClose = () => {
     this.setState({ anchorEl: null });
   };
+  onMenuOpened = () => {
+    let unreadNotificationsIds = this.props.notifications
+      .filter(not => !not.read)
+      .map(not => not.notificationId);
+    this.props.markNotificationsRead(unreadNotificationsIds);
+  };
   render() {
     const notifications = this.props.notifications;
     const anchorEl = this.state.anchorEl;
@@ -42,12 +48,12 @@ class Notifications extends Component {
               }
               color="secondary"
             >
-              <NotificationsIcons />
+              <NotificationsIcon />
             </Badge>
           ))
-        : (notificationIcon = <NotificationsIcons />);
+        : (notificationIcon = <NotificationsIcon />);
     } else {
-      notificationIcon = <NotificationsIcons />;
+      notificationIcon = <NotificationsIcon />;
     }
     let notificationsMarkup =
       notifications && notifications.length > 0 ? (
@@ -106,7 +112,7 @@ class Notifications extends Component {
 
 Notifications.propTypes = {
   markNotificationsRead: PropTypes.func.isRequired,
-  notifications: PropTypes.object.isRequired
+  notifications: PropTypes.array.isRequired
 };
 
 const mapStateToProps = state => ({

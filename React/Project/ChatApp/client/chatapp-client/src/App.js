@@ -29,6 +29,9 @@ import store from "./redux/store";
 import { SET_AUTHENTICATED } from "./redux/types";
 import { logoutUser, getUserData } from "./redux/actions/userActions";
 
+axios.defaults.baseURL =
+  "https://europe-west1-socialelape-1101.cloudfunctions.net/api";
+
 const theme = createMuiTheme(themeFile);
 
 const token = localStorage.FBIdToken;

@@ -2,10 +2,12 @@ import React, { Component, Fragment } from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import theme from "../../util/theme";
 import dayjs from "dayjs";
 import EditDetails from "./EditDetails";
 import MyButton from "../../util/MyButton";
+
+// utils
+import ProfileSkeletron from "../../util/ProfileSkeletron";
 
 // Redux
 import { connect } from "react-redux";
@@ -51,7 +53,7 @@ const styles = {
         verticalAlign: "middle"
       },
       "& a": {
-        color: theme.palette.primary.main
+        color: "#00bcd4"
       }
     },
     "& hr": {
@@ -179,7 +181,7 @@ class Profile extends Component {
         </Paper>
       )
     ) : (
-      <p>loading...</p>
+      <ProfileSkeletron />
     );
     return profileMarkUp;
   }
