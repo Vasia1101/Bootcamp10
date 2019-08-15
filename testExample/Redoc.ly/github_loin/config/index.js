@@ -1,6 +1,6 @@
 const GITHUB = {
-  clientID: "f5485370a374757dc49c",
-  clientSecret: "5f908abad089ed40c8c9f8ed74569b237102df85"
+  clientID: "ca07c74962097b8480f6",
+  clientSecret: "a9428e7a75c59e24a32c0f473da2dbd42d5fbb89"
 };
 module.exports = {
   GITHUB

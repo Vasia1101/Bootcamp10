@@ -43,12 +43,10 @@ app.get("/auth/github/callback", passport.authenticate("github"), function(
 });
 
 app.get("/user", (req, res) => {
-  console.log("getting user data!");
   res.send(user);
 });
 
 app.get("/auth/logout", (req, res) => {
-  console.log("log out");
   user = {};
   res.redirect("/");
 });

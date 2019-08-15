@@ -10,7 +10,7 @@ const Card = ({ img, name, href, color }) => {
       onClick={() => (window.location = href)}
     >
       <div>
-        <p className="login">{NAME} login</p>
+        <p className="login">"Login with {NAME}"</p>
       </div>
       <div
         style={{

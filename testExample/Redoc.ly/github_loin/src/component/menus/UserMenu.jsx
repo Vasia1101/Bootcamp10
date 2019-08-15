@@ -48,7 +48,7 @@ const UserMenu = () => {
   const handleClose = () => setAnchorEl(null);
 
   return (
-    <div style={{ float: "right" }}>
+    <div style={{ float: "left" }}>
       <IconButton
         href=""
         style={{ color: "white", padding: "13px 12px" }}

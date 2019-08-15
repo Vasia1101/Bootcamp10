@@ -13,6 +13,7 @@ function App() {
         <Route path="/" component={MenuBar} />
         <Route path="/profile" component={Profile} />
       </UserProvider>
+
       <Route path="/" exact component={Home} />
     </Router>
   );
